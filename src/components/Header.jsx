@@ -5,7 +5,7 @@ import logo from './../assets/general/compclub-logo.png'
 
 export default function Header () {
   return(
-    <header className='header'>
+    <header className='header fixed'>
       <Link to='/'>
         <img className='logo' src={logo} alt='CompClub Logo, homepage redirect'/>
       </Link>
