@@ -20,7 +20,7 @@ function App() {
           <Route path='/resources' element={<Resources />} />
         </Routes>
       </BrowserRouter>
-      <footer className='footer' />
+      {/* <footer className='footer' /> */}
     </div>
   );
 }
