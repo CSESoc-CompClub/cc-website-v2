@@ -1,0 +1,37 @@
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: col;
+  display: 1;
+  padding: 25px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.section {
+  width: 80%;
+  padding-top: 30px;
+}
+
