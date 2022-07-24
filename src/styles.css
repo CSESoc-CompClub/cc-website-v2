@@ -39,3 +39,55 @@ nav:active {
   top: 30px;
   left: 10px;
 }
+
+.mid_bio_text_homepage {
+  position: absolute;
+  height: 347px;
+  left: 56.29%;
+  right: 10.63%;
+  top: 193px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.25px;
+
+  color: #0F172A;
+}
+
+.what_is_compclub_homepage {
+  position: absolute;
+  height: 51px;
+  left: 56.29%;
+  right: -36.22%;
+  top: 168px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+
+  color: #0F172A;
+}
+
+.homepage_about_image {
+  position: absolute;
+  width: 616px;
+  height: 475px;
+  left: 87px;
+  top: 134px;
+
+  border-radius: 20px;
+}
