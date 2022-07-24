@@ -1,0 +1,22 @@
+
+
+.upcomingevent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.eventlink {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    background-color: #d1d1d1;
+}
+
+.eventlink:hover {
+    color:blue;
+}
+
+.divider {
+    height: 1px;
+    padding: 5px;
+}
