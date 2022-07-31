@@ -36,7 +36,7 @@ nav:active {
   position: relative;
   height: 600px;
   width: 100%;
-  border: 3px solid hsl(85, 68%, 40%);
+  /* border: 3px solid hsl(85, 68%, 40%); */
 }
 .banner_Homepage img{
   height: 100%;
@@ -46,7 +46,7 @@ nav:active {
   position: relative;
   height: 750px;
   width: 100%;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 
 .home_about_image {
@@ -55,8 +55,8 @@ nav:active {
   width:  716px;
   top: 105px;
   left: 87px;
-  border: 3px solid blue;
-  border-radius: 20px;
+  /* border: 3px solid blue; */
+  /* border-radius: 20px; */
 }
 .home_about_image img {
   height: 100%;
@@ -67,7 +67,7 @@ nav:active {
   position: relative;
   height: 850px;
   width: 100%;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 
 .mid_bio_text_homepage {
@@ -147,7 +147,7 @@ nav:active {
   width: 1000px;
   top: 120px;
   left: 500px;
-  border : 3px solid red;
+  /* border : 3px solid red; */
 }
 
 .carousel_div_bottom Alicecarousel {
