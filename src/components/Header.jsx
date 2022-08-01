@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles.css';
+import logo from './../assets/general/compclub-logo.png'
 
 export default function Header () {
   return(
-    <header className='header'>
+    <header className='header sticky top-0'>
       <Link to='/'>
-        <img className='logo' src='compclub_logo.png' alt='CompClub Logo, homepage redirect'/>
+        <img className='logo' src={logo} alt='CompClub Logo, homepage redirect'/>
       </Link>
       <Link className='nav' to='/aboutus'>About Us</Link>
       <Link className='nav' to='/events'>Events</Link>
