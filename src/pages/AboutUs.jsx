@@ -44,10 +44,26 @@ export default function AboutUs () {
     
         <div className="flex-row section">
           <div className="flex-col center">
-            <h2>Flagship Events</h2>
+            <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3>
             Upcoming highschool workshops
           </div>
         </div>
+
+        <div>
+        <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Workshops</h3>
+        <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        "justify-content": 'center',
+        "allign-items": 'center',
+        "padding-top": 50,
+        "padding-bottom": 50,
+        }}>
+          <Eventscard image={candpython} description="hello" header="Coding fundamentals"/>
+          <Eventscard image={htmlcss} description="hello" header="WebDev"/>
+          <Eventscard image={security} description="hello" header="Security"/>
+        </div>
+
       </div>
       <div id="faqs">
         <div className="centerDiv">
@@ -83,6 +99,7 @@ export default function AboutUs () {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
