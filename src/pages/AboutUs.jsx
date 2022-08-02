@@ -3,10 +3,28 @@ import '../AboutUs.css';
 import penguin from '../components/AboutUs/penguin.png'
 import About from "../components/about-us/about.png";
 
+import Eventscard from './../components/EventsCard.jsx'
+import { Grid, Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material';
+
+import banner from './../assets/about-us/about-us-banner.jpg';
+import htmlcss from './../assets/events/html-css.jpg';
+import security from './../assets/events/security.jpg';
+import candpython from './../assets/events/candpython.jpg';
+import upcoming1 from './../assets/events/upcoming/Winterworkshops.jpeg'
+
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Divider from '@mui/material/Divider';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
+
 export default function AboutUs () {
   return (
     <div>
-      <div className="center">
+      <img src={banner} alt='' class="w-full bg-cover bg-center" />
+      {/* <div className="center"> */}
+      <div class='mt-4 mx-12 center'>
         <div className="flex-row section">
           <div className="flex-col">
             <div>
@@ -42,15 +60,8 @@ export default function AboutUs () {
           </div>
         </div>
     
-        <div className="flex-row section">
-          <div className="flex-col center">
-            <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3>
-            Upcoming highschool workshops
-          </div>
-        </div>
-
         <div>
-        <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Workshops</h3>
+        <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3>
         <div style={{
         display: 'flex',
         flexDirection: 'row',
@@ -64,18 +75,53 @@ export default function AboutUs () {
           <Eventscard image={security} description="hello" header="Security"/>
         </div>
 
-      </div>
       <div id="faqs">
         <div className="centerDiv">
-          <div><h2 className="faqsHeading">FAQS</h2></div>
+          <h3 class='mt-6 text-3xl font-sans font-bold text-center'>FAQs</h3>
         </div>
         <div>
-          <ul>
+
+        <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+          <ListItem alignItems="flex-start">
+            <ListItemText
+              primary="What types of coding workshops we run?"
+              secondary={
+                <React.Fragment>
+                  {"We run all types of beginner workshops - web dev, python, C, etc."}
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+
+          <ListItem alignItems="flex-start">
+            <ListItemText
+              primary="Is it held in UNSW or schools?"
+              secondary={
+                <React.Fragment>
+                  {"Both! Depends on the workshop."}
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+
+          <ListItem alignItems="flex-start">
+            <ListItemText
+              primary="Do we have to be in specific grade to attend?"
+              secondary={
+                <React.Fragment>
+                  {"No! All high school students can attend"}
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+        </List>
+
+          {/* <ul>
             <li>What types of coding workshops we run?</li>
             <li>Do we go to schools</li>
             <li>What ages?</li>
             <li>Where do we  run our workshops?</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div>
@@ -99,6 +145,7 @@ export default function AboutUs () {
           </div>
         </div>
       </div>
+    </div>
     </div>
     </div>
   )
