@@ -32,7 +32,7 @@ export default function Events() {
         </div>
       </div>
       <div>
-        <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Workshops</h3>
+        <h3 class='mt-10 text-3xl font-sans font-bold text-center'>Workshops</h3>
         <div class='mt-4 mx-12 text-center'>
           <p>
             Compclub runs a wide varierty of workshops such as VR, Gaming and 3D
@@ -41,10 +41,10 @@ export default function Events() {
             well as run our own public workshops hosted at UNSW.
           </p>
         </div>
-        <div class='mt-4 mx-12'>
+        <div class='mt-4 flex items-center justify-center'>
           <img src={collage} alt='' />
         </div>
-        <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Some of what we teach</h3>
+        <h3 class='mt-10 text-3xl font-sans font-bold text-center'>Some of what we teach</h3>
         <div style={{
         display: 'flex',
         flexDirection: 'row',
