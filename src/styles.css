@@ -28,8 +28,150 @@ nav:active {
   width: 100%;
   bottom: 0;
   height: 100px;
-  position: fixed;
+  position: relative;
   background-color: #0f172a;
+}
+
+.banner_Homepage {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  /* border: 3px solid hsl(85, 68%, 40%); */
+}
+.banner_Homepage img{
+  height: 100%;
+  width: 100%;
+}
+.mid_Homepage {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  /* border: 3px solid blue; */
+}
+
+.home_about_image {
+  position: relative;
+  height: 525px;
+  width:  716px;
+  top: 105px;
+  left: 87px;
+  /* border: 3px solid blue; */
+  /* border-radius: 20px; */
+}
+.home_about_image img {
+  height: 100%;
+  width: 100%;
+}
+
+.bottom_Homepage {
+  position: relative;
+  height: 850px;
+  width: 100%;
+  /* border: 3px solid blue; */
+}
+
+.mid_bio_text_homepage {
+  position: relative;
+  height: 347px;
+  width: 500px;
+  bottom: 423px;
+  left: 950px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.25px;
+
+  color: #0F172A;
+}
+.homepage_about_image {
+  position: absolute;
+  width: 616px;
+  height: 475px;
+  left: 87px;
+  top: 134px;
+
+  border-radius: 20px;
+}
+
+.button_homepage_learn_more {
+  position: relative;
+  width: 204px;
+  height: 50px;
+  left: 954px;
+  bottom: 429px;
+
+  background: #6893FB;
+  border-radius: 20px;
+}
+
+.button_homepage_events {
+  position: relative;
+  width: 204px;
+  height: 50px;
+  left: 894px;
+  top: 250px;
+  background: #6893FB;
+  border-radius: 20px;
+}
+
+.what_is_compclub_homepage {
+  position: relative;
+  width: 300px;
+  bottom: 400px;
+  left: 950px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+
+  color: #0F172A;
+}
+
+.carousel_div_bottom {
+  position: relative;
+  height: 400px;
+  width: 1000px;
+  top: 120px;
+  left: 500px;
+  /* border : 3px solid red; */
+}
+
+.carousel_div_bottom Alicecarousel {
+  width: 10%;
+  height: 10%;
+}
+
+.title_bottom_homepage {
+  position: relative;
+  top: 30px;
+  left: 800px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 48px;
+  /* or 100% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+
+  color: #0F172A;
 }
 
 .logo {
