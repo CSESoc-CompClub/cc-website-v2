@@ -6,6 +6,7 @@ import Events from './pages/Events';
 import ContactUs from './pages/ContactUs';
 import Resources from './pages/Resources';
 import Header from './components/Header';
+import Test from './pages/Test';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/events' element={<Events />} />
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/resources' element={<Resources />} />
+          <Route path='/test' element={<Test />} />
         </Routes>
       </BrowserRouter>
       <footer className='footer' />
