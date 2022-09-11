@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles.css";
+import logo from './../assets/general/compclub-logo.png'
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
       <Link to="/">
         <img
           className="logo"
-          src="compclub_logo.png"
+          src={logo}
           alt="CompClub Logo, homepage redirect"
         />
       </Link>
