@@ -5,7 +5,24 @@ module.exports = {
     './src/components/*.{html,js,jsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        articles: 'articles 1s ease-in',
+      },
+      keyframes: {
+        articles: {
+          '0%, 100%': {
+            transform: 'translateX(0)',
+          },
+          '25%': {
+            transform: 'rotate(-30deg)',
+          },
+          '75%' : {
+            transform: 'rotate(30deg)',
+          },
+        }
+      }
+    },
   },
   plugins: [],
 }
