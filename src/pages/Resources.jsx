@@ -9,11 +9,9 @@ export default function Resources() {
   const myRef = useRef(); 
   const [ isVisible, setVisible ] = useState();
 
-  console.log('isVisible', isVisible);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0]; 
-      console.log('entry', entry);
       setVisible(entry.isIntersecting); 
     })
     observer.observe(myRef.current); 
