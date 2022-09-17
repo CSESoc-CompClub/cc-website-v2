@@ -113,8 +113,8 @@ export default function Home() {
         <div>
             <img src={banner} class='object-contain h-1/4' />
             <div class="grid grid-col-2 grid-flow-col ">
-                <div class="col-span-1 pl-20 pt-20 pb-20 pl-40"><img src={about_image} /></div>
-                <div class="col-span-2 pt-28 pr-80">
+                <div class="col-span-1 pl-[5%] pt-20 pb-20 pl-40 "><img src={about_image} /></div>
+                <div class="col-span-2 pt-28 pr-[10%]">
                     <p class="text-5xl font-Inter font-semibold mb-8">WHAT IS COMPCLUB</p>
                     <p class="w-96 font-Inter font-normal text-xl mb-8"> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students.</p>
                     <button
@@ -127,7 +127,7 @@ export default function Home() {
 
             <div class="text-center py-5 pb-40">
                 <p class="text-5xl font-Inter font-semibold">UPCOMING EVENTS</p>
-                <div className="w-9/12 pt-20 pl-96 justify-items-center"> <AliceCarousel
+                <div className="w-[90%] pt-[5%] pl-[10%] justify-items-center"> <AliceCarousel
                     mouseTracking
                     disableButtonsControls
                     items={items}
