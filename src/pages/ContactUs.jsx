@@ -23,23 +23,25 @@ export default function ContactUs() {
           back to you faster then you can invert a binary tree!
         </p>
       </div>
-      <div class='mt-10 mx-12 grid grid-cols-2 place-items-center'>
-        <div class='grid place-items-center'>
+      <div class='mt-10 mx-12 grid grid-rows-3'>
+        <div class='grid grid-cols-2 place-items-center justify-center gap-4'>
           <Avatar sx={{ bgcolor: green[700] }}>
             <Link href='mailto:directors@compclub.org' color='inherit'>
               <EmailIcon />
             </Link>
           </Avatar>
-          <div class='text-2xl font-bold'>Email</div>
-          <p>
-            <a href='mailto:directors@compclub.org'>directors@compclub.org</a>
-          </p>
-        </div>
-        <div class='grid place-items-center'>
           <Avatar sx={{ bgcolor: green[700] }}>
             <AppsIcon />
           </Avatar>
+        </div>
+        <div class='grid grid-cols-2 place-items-center gap-4'>
+          <div class='text-2xl font-bold'>Email</div>
           <div class='text-2xl font-bold'>Socials</div>
+        </div>
+        <div class='grid grid-cols-2 place-items-center gap-4'>
+          <p>
+            <a href='mailto:directors@compclub.org'>directors@compclub.org</a>
+          </p>
           <div class='grid grid-cols-3 place-items-center gap-2'>
             <Link
               href='https://www.facebook.com/CSESocCompClub'
