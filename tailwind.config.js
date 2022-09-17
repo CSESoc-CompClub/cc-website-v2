@@ -7,18 +7,35 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        cards: 'cards 1s ease-in',
         articles: 'articles 1s ease-in',
       },
       keyframes: {
+        evenCards: {
+          '0%, 25%': {
+            opacity: '0',
+          },
+					'0%, 50%': {
+						transform: 'translateX(100px)',
+					},
+        },
+        oddCards: {
+          '0%, 25%': {
+            opacity: '0',
+          },
+					'0%, 50%': {
+						transform: 'translateX(-100px)',
+					},
+        },
         articles: {
-          '0%, 100%': {
-            transform: 'translateX(0)',
+          '0%, 25%': {
+            opacity: '0',
           },
-          '25%': {
-            transform: 'rotate(-30deg)',
+          '0%, 30%': {
+            transform: 'translateY(50px)',
           },
-          '75%' : {
-            transform: 'rotate(30deg)',
+          '50%, 55%' : {
+            transform: 'skew(1deg)',
           },
         }
       }

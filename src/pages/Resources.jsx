@@ -24,11 +24,16 @@ export default function Resources() {
       <div class="text-center py-5">
         <h1 class="text-3xl gray-900 font-bold py-5">Resources</h1>
         <p class="gray-500 py-5">i love compclub</p>
-        <div class="flex justify-center mb-3 p-4">
-          <div class="flex flex-col space-y-6">
-            {Array.from({ length: 2 }).map((_, index) => (
-              <ResourceCard key={index} />
-            ))}
+          <div class="flex justify-center mb-3 p-4">
+            <div class="flex flex-col space-y-6">
+              {Array.from({ length: 2 }).map((_, index) => (
+                <div ref={ myRef } class={` ${isVisible ? 
+                    /* (index % 2 === 0 ? 'animate-evenCards' : 'animate-oddCards') */
+                    'animate-articles'
+                    : ''} `}>
+                  <ResourceCard key={index} />
+                </div>
+              ))}
           </div>
         </div>
       </div>
