@@ -2,9 +2,9 @@ import banner from './../assets/contact-us/contact-us-banner.jpg';
 import map from './../assets/contact-us/unsw-map.png';
 import EmailIcon from '@mui/icons-material/Email';
 import AppsIcon from '@mui/icons-material/Apps';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import fb from './../assets/contact-us/fb.svg';
+import insta from './../assets/contact-us/insta.svg';
+import linkedin from './../assets/contact-us/linkedin.svg';
 import Avatar from '@mui/material/Avatar';
 import Link from '@mui/material/Link';
 import { green } from '@mui/material/colors';
@@ -23,7 +23,7 @@ export default function ContactUs() {
           back to you faster then you can invert a binary tree!
         </p>
       </div>
-      <div class='mt-10 mx-12 grid grid-cols-2 place-items-center gap-4'>
+      <div class='mt-10 mx-12 grid grid-cols-2 place-items-center'>
         <div class='grid place-items-center'>
           <Avatar sx={{ bgcolor: green[700] }}>
             <Link href='mailto:directors@compclub.org' color='inherit'>
@@ -45,19 +45,19 @@ export default function ContactUs() {
               href='https://www.facebook.com/CSESocCompClub'
               color='inherit'
             >
-              <FacebookIcon />
+              <img src={fb} class='h-10 w-10' />
             </Link>
             <Link
               href='https://www.instagram.com/unswcompclub/?hl=en'
               color='inherit'
             >
-              <InstagramIcon />
+              <img src={insta} class='h-14 w-14' />
             </Link>
             <Link
               href='https://www.linkedin.com/company/csesoc-compclub/'
               color='inherit'
             >
-              <LinkedInIcon />
+              <img src={linkedin} class='h-10 w-10' />
             </Link>
           </div>
         </div>
