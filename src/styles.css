@@ -86,17 +86,10 @@
   font-weight: 800;
   font-size: 48px;
   line-height: 48px;
-<<<<<<< HEAD
-  color: #0F172A;
-=======
-  /* or 100% */
-
   display: flex;
   align-items: center;
   letter-spacing: -0.5px;
-
   color: #0f172a;
->>>>>>> c43520aadb6e466afe628cac70b78691037d89e4
 }
 
 .carousel_div_bottom {
