@@ -129,16 +129,17 @@ export default function Home() {
                 <p class="text-5xl font-Inter font-semibold">UPCOMING EVENTS</p>
                 <div className="w-9/12 pt-20 pl-96 justify-items-center"> <AliceCarousel
                     mouseTracking
+                    disableButtonsControls
                     items={items}
                     responsive={responsive}
                     controlsStrategy="alternate"
                 />
                     <button
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold h-16 w-32 rounded-full"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold h-16 w-32 mt-4 rounded-full"
                     >
-                        <p class = "decoration-white"> Learn more → </p>
+                        <p class="decoration-white"> Learn more → </p>
                     </button>
-                </div> 
+                </div>
             </div>
         </div >
     )
