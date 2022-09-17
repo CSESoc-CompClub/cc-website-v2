@@ -1,8 +1,8 @@
 import {React, useState} from "react";
 import Header from "../components/Header"
-import banner from "../assets/compclub_banner.png"
+import banner from "../assets/home/compclub_banner.png"
 import "./CSS/Home.scss"
-import about_image from "../assets/about_image.png"
+import about_image from "../assets/home/about_image.png"
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "@fontsource/inter";
