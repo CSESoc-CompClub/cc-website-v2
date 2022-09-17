@@ -6,15 +6,30 @@ import Articles from "../data/Articles";
 import { useRef, useEffect, useState } from "react";
 
 export default function Resources() {
-  const myRef = useRef(); 
-  const [ isVisible, setVisible ] = useState();
+  const cardRef = useRef(); 
+  const articleRef = useRef(); 
+  const [ cardVisible, setCardVisible ] = useState();
+  const [ articlesVisible, setArticlesVisible ] = useState();
+  /* const [ isVisible, setVisible ] = useState(); */
 
   useEffect(() => {
+
     const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0]; 
-      setVisible(entry.isIntersecting); 
+
+      /* console.log("size:", entries); */
+      const cardEntry = entries[0];
+      console.log("CE:", cardEntry.isIntersecting);
+      setCardVisible(cardEntry.isIntersecting); 
+      if (entries.length > 1) {
+        const articleEntry = entries[1]; 
+        console.log("AE:", articleEntry.isIntersecting);
+        setArticlesVisible(articleEntry.isIntersecting); 
+      }
     })
-    observer.observe(myRef.current); 
+
+    if (cardRef.current) observer.observe(cardRef.current); 
+    if (articleRef.current) observer.observe(articleRef.current); 
+
   }, [])
 
   return (
@@ -27,9 +42,10 @@ export default function Resources() {
           <div class="flex justify-center mb-3 p-4">
             <div class="flex flex-col space-y-6">
               {Array.from({ length: 2 }).map((_, index) => (
-                <div ref={ myRef } class={` ${isVisible ? 
+                <div ref={ cardRef } class={` ${cardVisible ? 
                     (index % 2 === 0 ? 'animate-evenCards' : 'animate-oddCards')
-                    : 'opacity-0'} `}>
+                    : 'opacity-0'
+                    } `}>
                   <ResourceCard key={index} />
                 </div>
               ))}
@@ -39,7 +55,7 @@ export default function Resources() {
 
       {/* Articles Section */}
       <div class="text-center py-5">
-        <div ref={ myRef } class={` ${isVisible ? 'animate-articles' : ''} `}>
+        <div ref={ articleRef } class={` ${articlesVisible ? 'animate-articles' : ''} `}>
           <h1 class="text-3xl gray-900 font-bold py-5">Articles</h1>
           <p class="gray-500 py-5">compclub dev is goated</p>
           <div class="flex flex-row space-x-4 justify-center py-5">
