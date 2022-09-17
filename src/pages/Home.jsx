@@ -6,6 +6,8 @@ import about_image from "../assets/about_image.png"
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "@fontsource/inter";
+import AnimatedThing from '../components/ExplodingBox'
+
 
 /*Header - Navbar
  Banner - 1452 x 553 
@@ -111,6 +113,9 @@ export default function Home() {
 
     return (
         <>
+            <div>
+                <AnimatedThing></AnimatedThing>
+            </div>             
             <div className='banner_Homepage'>
                 <img src={banner} />
             </div>
