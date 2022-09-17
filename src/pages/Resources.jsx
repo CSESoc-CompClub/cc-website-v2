@@ -28,8 +28,7 @@ export default function Resources() {
             <div class="flex flex-col space-y-6">
               {Array.from({ length: 2 }).map((_, index) => (
                 <div ref={ myRef } class={` ${isVisible ? 
-                    /* (index % 2 === 0 ? 'animate-evenCards' : 'animate-oddCards') */
-                    'animate-articles'
+                    (index % 2 === 0 ? 'animate-evenCards' : 'animate-oddCards')
                     : ''} `}>
                   <ResourceCard key={index} />
                 </div>

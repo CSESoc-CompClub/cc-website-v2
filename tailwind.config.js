@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        cards: 'cards 1s ease-in',
+        oddCards: 'oddCards 1s ease-in',
+        evenCards: 'evenCards 1s ease-in',
         articles: 'articles 1s ease-in',
       },
       keyframes: {
