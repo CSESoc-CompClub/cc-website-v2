@@ -29,7 +29,7 @@ export default function Resources() {
               {Array.from({ length: 2 }).map((_, index) => (
                 <div ref={ myRef } class={` ${isVisible ? 
                     (index % 2 === 0 ? 'animate-evenCards' : 'animate-oddCards')
-                    : ''} `}>
+                    : 'opacity-0'} `}>
                   <ResourceCard key={index} />
                 </div>
               ))}
