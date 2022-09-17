@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 const styles = theme => ({
     Card: {

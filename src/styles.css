@@ -177,7 +177,7 @@ nav:active {
 .logo {
   width: 120px;
   height: 30px;
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 10px;
 }

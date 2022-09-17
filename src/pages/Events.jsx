@@ -9,6 +9,7 @@ import candpython from './../assets/events/candpython.jpg';
 import collage from './../assets/events/events-collage.png';
 import WorkShopCard from '../components/WorkShopCard.jsx'
 import UpcomingEvent from '../components/EventsCard.jsx'
+import WorkShopCard2 from '../components/WorkShopCard2';
 import { Grid, Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 export default function Events() {
@@ -22,7 +23,7 @@ export default function Events() {
               <div class="shadow-md bg-[#0f182a] max-w-lg rounded-3xl">
                 <div class="border-b border-white-300 rounded-t-md p-4">
                   <div class="flex justify-center text-2xl text-white font-bold">
-                    UpcomingEvents
+                    Upcoming Events
                   </div>
                 </div>
                 <div id="eventlist">
@@ -57,14 +58,8 @@ export default function Events() {
           <img src={collage} alt='' />
         </div>
         <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Some of what we teach</h3>
-
-        <div class='py-50 flex flex-row items-center justify-center'   style={{"padding-top": 50, "padding-bottom": 50,}}>
-          <WorkShopCard image={candpython} description="hello" header="Coding basics"/>
-          <WorkShopCard image={htmlcss} description="hello" header="WebDev"/>
-        </div>
-        <div class='py-50 flex flex-row items-center justify-center'   style={{"padding-top": 50, "padding-bottom": 50,}}>
-          <WorkShopCard image={security} description="hello" header="Security"/>
-          <WorkShopCard image={gamedev} description="hello" header="GameDev"/>
+        <div class='py-10 flex flex-row items-center justify-center w-50 h-500'>
+          <WorkShopCard2 image={security}/>
         </div>
       </div>
     </div>
