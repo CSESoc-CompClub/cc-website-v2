@@ -70,13 +70,7 @@ nav:active {
   /* border: 3px solid blue; */
 }
 
-.mid_bio_text_homepage {
-  position: relative;
-  height: 347px;
-  width: 500px;
-  bottom: 423px;
-  left: 950px;
-
+.inter_text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -101,11 +95,10 @@ nav:active {
 }
 
 .button_homepage_learn_more {
-  position: relative;
   width: 204px;
   height: 50px;
-  left: 954px;
-  bottom: 429px;
+  position: relative;
+  bottom:100px;
 
   background: #6893FB;
   border-radius: 20px;
@@ -122,22 +115,11 @@ nav:active {
 }
 
 .what_is_compclub_homepage {
-  position: relative;
-  width: 300px;
-  bottom: 400px;
-  left: 950px;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
   line-height: 48px;
-  /* or 100% */
-
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.5px;
-
   color: #0F172A;
 }
 
@@ -145,7 +127,7 @@ nav:active {
   position: relative;
   height: 400px;
   width: 1000px;
-  top: 120px;
+  top: 70px;
   left: 500px;
   /* border : 3px solid red; */
 }
