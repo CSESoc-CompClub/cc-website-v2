@@ -2,9 +2,9 @@ import banner from './../assets/contact-us/contact-us-banner.jpg';
 import map from './../assets/contact-us/unsw-map.png';
 import EmailIcon from '@mui/icons-material/Email';
 import AppsIcon from '@mui/icons-material/Apps';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import fb from './../assets/contact-us/fb.svg';
+import insta from './../assets/contact-us/insta.svg';
+import linkedin from './../assets/contact-us/linkedin.svg';
 import Avatar from '@mui/material/Avatar';
 import Link from '@mui/material/Link';
 import { green } from '@mui/material/colors';
@@ -23,41 +23,43 @@ export default function ContactUs() {
           back to you faster then you can invert a binary tree!
         </p>
       </div>
-      <div class='mt-10 mx-12 grid grid-cols-2 place-items-center gap-4'>
-        <div class='grid place-items-center'>
+      <div class='mt-10 mx-12 grid grid-rows-3'>
+        <div class='grid grid-cols-2 place-items-center justify-center gap-4'>
           <Avatar sx={{ bgcolor: green[700] }}>
             <Link href='mailto:directors@compclub.org' color='inherit'>
               <EmailIcon />
             </Link>
           </Avatar>
-          <div class='text-2xl font-bold'>Email</div>
-          <p>
-            <a href='mailto:directors@compclub.org'>directors@compclub.org</a>
-          </p>
-        </div>
-        <div class='grid place-items-center'>
           <Avatar sx={{ bgcolor: green[700] }}>
             <AppsIcon />
           </Avatar>
+        </div>
+        <div class='grid grid-cols-2 place-items-center gap-4'>
+          <div class='text-2xl font-bold'>Email</div>
           <div class='text-2xl font-bold'>Socials</div>
+        </div>
+        <div class='grid grid-cols-2 place-items-center gap-4'>
+          <p>
+            <a href='mailto:directors@compclub.org'>directors@compclub.org</a>
+          </p>
           <div class='grid grid-cols-3 place-items-center gap-2'>
             <Link
               href='https://www.facebook.com/CSESocCompClub'
               color='inherit'
             >
-              <FacebookIcon />
+              <img src={fb} class='h-10 w-10' />
             </Link>
             <Link
               href='https://www.instagram.com/unswcompclub/?hl=en'
               color='inherit'
             >
-              <InstagramIcon />
+              <img src={insta} class='h-14 w-14' />
             </Link>
             <Link
               href='https://www.linkedin.com/company/csesoc-compclub/'
               color='inherit'
             >
-              <LinkedInIcon />
+              <img src={linkedin} class='h-10 w-10' />
             </Link>
           </div>
         </div>
