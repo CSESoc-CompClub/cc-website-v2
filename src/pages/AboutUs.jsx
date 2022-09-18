@@ -6,7 +6,7 @@ import About from "../components/about-us/about.png";
 
 import Eventscard from './../components/EventsCard.jsx'
 
-import banner from './../assets/about-us/about-us-banner.jpg';
+import banner from './../assets/about-us/about-us.jpg';
 import htmlcss from './../assets/events/html-css.jpg';
 import security from './../assets/events/security.jpg';
 import candpython from './../assets/events/candpython.jpg';
@@ -25,7 +25,7 @@ export default function AboutUs() {
   const navigate = useNavigate();
   return (
     <div>
-      <img src={banner} alt='' class="w-full bg-cover bg-center" />
+      <img src={banner} alt='' class='object-contain h-1/4' />
       {/* <div className="center"> */}
       <div class='mt-4 mx-12 center'>
         <div className="flex-row section">
