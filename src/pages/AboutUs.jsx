@@ -4,13 +4,21 @@ import '../AboutUs.css';
 import penguin from '../assets/about-us/penguin.PNG'
 import About from "../components/about-us/about.png";
 import './../styles/events.css'
-import Eventscard from './../components/EventsCard.jsx'
+import EventsCard from './../components/MasterCard.jsx'
 import UpcomingEvent from '../components/EventsCard.jsx'
 import banner from './../assets/about-us/about-us.jpg';
 import htmlcss from './../assets/events/html-css.jpg';
 import security from './../assets/events/security.jpg';
 import candpython from './../assets/events/candpython.jpg';
 import upcoming1 from './../assets/events/upcoming/Winterworkshops.jpeg'
+import MentorRecruitment from '../assets/about-us/mentor-recruitment.png';
+import SubComRecruitment from '../assets/about-us/subcom-recruitment.png';
+import GroupIcon from '@mui/icons-material/Group';
+import FlagIcon from '@mui/icons-material/Flag';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 
 import {
   Accordion,
@@ -36,27 +44,43 @@ export default function AboutUs() {
               throughout the year. By running a variety of freeworkshops throughout the year, we aim to create a fun, collaborative
               environment for students to develop their interests and hone their programming skills along like-minded students.
             </div>
-            <div className="mini-flex-row">
+            {/* <div className="mini-flex-row">
               <div>
-                <h2>10</h2>
-                Workshops held
+                <h2>15+</h2>
+                Events
               </div>
               <div>
                 <h2>500+</h2>
                 Students taught
               </div>
-            </div>
-            <div className="mini-flex-row">
-              <div>
-                <h2>10</h2>
-                Workshops held
+            </div> */}
+            <div className="mini-flex-row" style={{
+              "justify-content": 'space-evenly',
+              "padding-top": 10,
+            }}>
+              <div className="mini-flex-row">
+                <GroupIcon sx={{ fontSize: "50px" }} />
+                <div style={{
+                  "padding-left": 15,
+                }}>
+                  <h2>300+</h2>
+                  Students Reached
+                </div>
+
               </div>
-              <div>
-                <h2>500+</h2>
-                Students taught
+              <div className="mini-flex-row">
+                <FlagIcon sx={{ fontSize: "50px" }} />
+                <div style={{
+                  "padding-left": 15,
+                }}>
+                  <h2>20+</h2>
+                  Events
+                </div>
+
               </div>
             </div>
-          </div>
+
+          </div> 
 
           <div className="center-vertical">
             <img src={About} width={1580} alt="Logo" />
@@ -64,55 +88,117 @@ export default function AboutUs() {
         </div>
 
         <div>
-          {/* <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3> */}
-          {/* <div style={{
+          <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Recent Flagship Events</h3>
+          <div style={{
             display: 'flex',
             flexDirection: 'row',
-            "justify-content": 'center',
-            "allign-items": 'center',
-            "padding-top": 50,
-            "padding-bottom": 50,
+            "justify-content": 'space-evenly',
+            "align-items": 'center',
+            // "padding-top": 50,
+            // "padding-bottom": 50,
           }}>
-            <Eventscard image={candpython} description="hello" header="Coding fundamentals" />
-            <Eventscard image={htmlcss} description="hello" header="WebDev" />
-            <Eventscard image={security} description="hello" header="Security" />
-          </div> */}
 
-      {/* FROM EVENTS */}
-      <div class="text-center py-5">
-        <div class="flex justify-center mb-3 p-4">
-          <div>
-            <div class="shadow-md bg-sky-500 rounded-3xl">
-              <div class="shadow-md bg-[#0f182a] max-w-lg rounded-3xl">
-                <div class="border-b border-white-300 rounded-t-md p-4">
-                  <div class="flex justify-center text-2xl text-white font-bold">
-                    Upcoming Events
+            <Card sx={{ maxWidth: 345, height: 450 }}>
+                  <CardMedia
+                    component="img"
+                    alt="SubCom Recruitment Banner"
+                    height="140"
+                    image={SubComRecruitment}
+                    sx={{ objectFit: "contain", height: 200 }}
+                  />
+                  <CardContent>
+                    <div id="name" class="text-lg font-bold">
+                      [CLOSED]Subcom Recruitment
+                    </div>
+                    <div id="shortdescrip">
+                      Being part of CompClub is a fun and rewarding volunteering experience! Join us for an 🥰unforgettable experience🥰 in raising future programmers 💻 and give back to the community‼️
+                    </div>
+                  </CardContent>
+                  <CardActions>
+                    <div id="link">
+                      <a href={"https://www.facebook.com/events/1004563656802334/"} target="_blank">
+                        <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                          Learn more and sign up!
+                        </button>
+                      </a>
+                    </div>
+                  </CardActions>
+            </Card>
+
+            <Card sx={{ maxWidth: 345, height: 450 }}>
+                  <CardMedia
+                    component="img"
+                    alt="Mentor Recruitment Banner"
+                    height="200"
+                    image={MentorRecruitment}
+                    sx={{ objectFit: "contain", height: 200 }}
+                  />
+                  <CardContent>
+                    <div id="name" class="text-lg font-bold">
+                      Mentor Recruitment
+                    </div>
+                    <div id="shortdescrip">
+                      Being part of CompClub is a fun and rewarding volunteering experience! Join us for an 🥰unforgettable experience🥰 in raising future programmers 💻 and give back to the community‼️
+                    </div>
+                  </CardContent>
+                  <CardActions>
+                    <div id="link">
+                      <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
+                        <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                          Learn more and sign up!
+                        </button>
+                      </a>
+                    </div>
+                  </CardActions>
+            </Card>
+
+            {/* <div id="event" class="flex p-4">
+              <div> 
+                  <img src={MentorRecruitment} alt='' class='object-contain' />
+                  <div id="name" class="text-lg font-bold">
+                    Mentor Recruitment
                   </div>
-                </div>
-                <div id="eventlist">
-                    <UpcomingEvent 
-                      name="Winter Workshop" 
-                      description="It's time for CSESoc CompClub Winter Workshops!! 🐧❄️ We're welcoming high school students 🤩 to join us over three days in the school holidays to learn how to code!!"
-                      date=" 6-8th of July 2022"
-                      time="10:00 - 4:00pm"
-                      location="UNSW"
-                      link="https://www.facebook.com/events/744066593508315/?ref=newsfeed"
-                    />
-                    {/* If there a two/more events open at the same inclue this hr between two events
-                      <hr class="h-0.5"/>
-                    */}
-                </div>
+                  <div id="shortdescrip">
+                    Being part of CompClub is a fun and rewarding volunteering experience!
+                  </div>
+                  <br/>
+                  <div id="link">
+                    <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
+                      <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                        Learn more and sign up!
+                      </button>
+                    </a>
+                  </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-          <div class="flex justify-center">
+            <div id="event" class="flex p-4">
+              <div> 
+                  <img src={SubComRecruitment} alt='' class='object-contain' />
+                  <div id="name" class="text-lg font-bold">
+                    Mentor Recruitment
+                  </div>
+                  <div id="shortdescrip">
+                    [CLOSED] 💡This is your chance to ✨INSPIRE ✨ high school students to join the tech field and build your communication skills! Join us for an 🥰unforgettable experience🥰 in raising future programmers 💻 and give back to the community‼️
+                  </div>
+                  <br/>
+                  <div id="link">
+                    <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
+                      <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                        Learn more and sign up!
+                      </button>
+                    </a>
+                  </div>
+              </div>
+            </div> */}
+
+          </div>
+
+          {/* <div class="flex justify-center">
             <button class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded" onClick={() => navigate('/events')}>
               See events
             </button>
-          </div>
+          </div> */}
 
           <br /><br />
           <div>
