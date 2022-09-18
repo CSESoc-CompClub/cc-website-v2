@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import '../AboutUs.css';
 import penguin from '../assets/about-us/penguin.PNG'
 import About from "../components/about-us/about.png";
-
+import './../styles/events.css'
 import Eventscard from './../components/EventsCard.jsx'
-
+import UpcomingEvent from '../components/EventsCard.jsx'
 import banner from './../assets/about-us/about-us.jpg';
 import htmlcss from './../assets/events/html-css.jpg';
 import security from './../assets/events/security.jpg';
@@ -26,17 +26,17 @@ export default function AboutUs() {
   return (
     <div>
       <img src={banner} alt='' class='object-contain h-1/4' />
-      {/* <div className="center"> */}
       <div class='mt-4 mx-12 center'>
-        <div className="flex-row section">
+        <div className="flex-row">
           <div className="flex-col">
             <div>
-              <h2>About Compclub</h2>
+              {/* <h2>About Compclub</h2> */}
+              <h3 class='mt-6 text-3xl font-sans font-bold'>About Compclub</h3>
               CompClub is a portfolio under the student run UNSW organisation CSESoc that promotes computing to high school students
               throughout the year. By running a variety of freeworkshops throughout the year, we aim to create a fun, collaborative
               environment for students to develop their interests and hone their programming skills along like-minded students.
             </div>
-            <div className="flex-row">
+            <div className="mini-flex-row">
               <div>
                 <h2>10</h2>
                 Workshops held
@@ -46,7 +46,7 @@ export default function AboutUs() {
                 Students taught
               </div>
             </div>
-            <div className="flex-row">
+            <div className="mini-flex-row">
               <div>
                 <h2>10</h2>
                 Workshops held
@@ -58,14 +58,14 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="flex-col center-vertical">
+          <div className="center-vertical">
             <img src={About} width={1580} alt="Logo" />
           </div>
         </div>
 
         <div>
-          <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3>
-          <div style={{
+          {/* <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3> */}
+          {/* <div style={{
             display: 'flex',
             flexDirection: 'row',
             "justify-content": 'center',
@@ -76,7 +76,37 @@ export default function AboutUs() {
             <Eventscard image={candpython} description="hello" header="Coding fundamentals" />
             <Eventscard image={htmlcss} description="hello" header="WebDev" />
             <Eventscard image={security} description="hello" header="Security" />
+          </div> */}
+
+      {/* FROM EVENTS */}
+      <div class="text-center py-5">
+        <div class="flex justify-center mb-3 p-4">
+          <div>
+            <div class="shadow-md bg-sky-500 rounded-3xl">
+              <div class="shadow-md bg-[#0f182a] max-w-lg rounded-3xl">
+                <div class="border-b border-white-300 rounded-t-md p-4">
+                  <div class="flex justify-center text-2xl text-white font-bold">
+                    Upcoming Events
+                  </div>
+                </div>
+                <div id="eventlist">
+                    <UpcomingEvent 
+                      name="Winter Workshop" 
+                      description="It's time for CSESoc CompClub Winter Workshops!! 🐧❄️ We're welcoming high school students 🤩 to join us over three days in the school holidays to learn how to code!!"
+                      date=" 6-8th of July 2022"
+                      time="10:00 - 4:00pm"
+                      location="UNSW"
+                      link="https://www.facebook.com/events/744066593508315/?ref=newsfeed"
+                    />
+                    {/* If there a two/more events open at the same inclue this hr between two events
+                      <hr class="h-0.5"/>
+                    */}
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
 
           <div class="flex justify-center">
             <button class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded" onClick={() => navigate('/events')}>

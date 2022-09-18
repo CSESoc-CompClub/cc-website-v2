@@ -92,9 +92,21 @@ li {
   justify-content: space-evenly;
 }
 
+.mini-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+@media screen and (max-width: 800px) {
+    .flex-row {
+        flex-direction: column;
+    }
+}
+
 .flex-col {
   display: flex;
-  flex-direction: col;
+  flex-direction: column;
   display: 1;
   padding: 25px;
 }
@@ -102,10 +114,5 @@ li {
 h2 {
   font-weight: 700;
   font-size: 24px;
-}
-
-.section {
-  width: 80%;
-  padding-top: 30px;
 }
 
