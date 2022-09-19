@@ -23,7 +23,7 @@ export default function UpcomingEvent(props) {
             <br/>
             <div id="link">
               <a href={props.link} target="_blank">
-                <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                <button class="bg-gradient-to-r from-indigo-300 to-blue-800 text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
                   Learn more and sign up!
                 </button>
               </a>

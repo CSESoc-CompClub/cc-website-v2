@@ -20,7 +20,7 @@ export default function Events() {
         <div class="flex justify-center mb-3 p-4">
           <div>
             <div class="shadow-md bg-sky-500 rounded-3xl">
-              <div class="shadow-md bg-[#0f182a] max-w-lg rounded-3xl">
+              <div class="shadow-md bg-gradient-to-r from-indigo-300 to-blue-800 max-w-lg rounded-3xl">
                 <div class="border-b border-white-300 rounded-t-md p-4">
                   <div class="flex justify-center text-2xl text-white font-bold">
                     Upcoming Events
