@@ -7,9 +7,9 @@ import gamedev from './../assets/events/gamedev.jpeg'
 import security from './../assets/events/security.jpg';
 import candpython from './../assets/events/candpython.jpg';
 import collage from './../assets/events/events-collage.png';
-import WorkShopCard from '../components/WorkShopCard.jsx'
 import UpcomingEvent from '../components/EventsCard.jsx'
-import WorkShopCard2 from '../components/WorkShopCard2';
+import SyllabusAccordion from '../components/SyllabusAccordion';
+import SyllabusCards from '../components/SyllabusCards';
 import { Grid, Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 export default function Events() {
@@ -58,9 +58,8 @@ export default function Events() {
           <img src={collage} alt='' />
         </div>
         <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Some of what we teach</h3>
-        <div class='py-10 flex flex-row items-center justify-center w-50 h-500'>
-          <WorkShopCard2 image={security}/>
-        </div>
+        <SyllabusAccordion/>
+        <SyllabusCards/>
       </div>
     </div>
   );
