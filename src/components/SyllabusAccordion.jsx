@@ -42,7 +42,7 @@ export default function SyllabusAccordion() {
                         </AccordionItemHeading>
                         <AccordionItemPanel>
                             <p>
-                                Ever wanted to build your own website? 
+                                Ever wanted to build your own website?
                                 Come and learn about the wild wacky world of Web development.
                                 You’ll gain insight into the HTML and CSS languages, the backbones of
                                 the entire internet, allowing you to not only create your own website, but
@@ -58,9 +58,11 @@ export default function SyllabusAccordion() {
                         </AccordionItemHeading>
                         <AccordionItemPanel>
                             <p>
-                                Staying safe online is a lot more then just making sure your passwords are strong! 
-                                Learn about the world of online security, as well as introduction into 
-                                encryption and cryptography 
+                                Staying safe online is a lot more then just making sure your passwords 
+                                include a number and a special character! 
+                                Learn about the world of online security, 
+                                with an introduction into encryption and cryptography through a special competition
+                                called Capture the flag. 
                             </p>
                         </AccordionItemPanel>
                     </AccordionItem>
@@ -72,10 +74,11 @@ export default function SyllabusAccordion() {
                         </AccordionItemHeading>
                         <AccordionItemPanel>
                             <p>
-                                Exercitation in fugiat est ut ad ea cupidatat ut in
-                                cupidatat occaecat ut occaecat consequat est minim minim
-                                esse tempor laborum consequat esse adipisicing eu
-                                reprehenderit enim.
+                                Ever wanted to see how computer games are made? 
+                                Come and learn about different aspects
+                                of game design and what it takes
+                                to make a game fun. With this new knowledge, 
+                                you will then get the chance to make your own game yourself!
                             </p>
                         </AccordionItemPanel>
                     </AccordionItem>
