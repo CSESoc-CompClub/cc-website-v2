@@ -16,7 +16,7 @@ export default function SyllabusAccordion() {
         setExpanded(isExpanded ? panel : false);
     };
     return (
-        <div class='py-10 flex flex-row items-center justify-center w-50 h-500 block md:hidden'>
+        <div class='pt-7 pb-7 flex flex-row items-center justify-center w-50 h-500 block md:hidden'>
             <div class='w-3/4 h-64 rounded-lg'>
                 <Accordion allowZeroExpanded='true' class='text-center rounded-sm'>
                     <AccordionItem>

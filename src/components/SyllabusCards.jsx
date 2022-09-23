@@ -54,7 +54,7 @@ export default function SyllabusCards(props) {
             </div>
 
             {/*row two*/}
-            <div class='flex flex-row px-[10%] pb-10 hidden md:flex justify-center'>
+            <div class='flex flex-row px-[10%] pb-6 hidden md:flex justify-center'>
                 <div class="text-center py-5">
                     <div class="flex justify-center mb-3 p-4">
                         <div class='flex flex-col'>

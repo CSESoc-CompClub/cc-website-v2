@@ -2,15 +2,11 @@ import React from 'react';
 import './../styles/events.css'
 import { ReactDOM } from 'react';
 import banner from './../assets/events/events-banner.png';
-import htmlcss from './../assets/events/html-css.jpg';
-import gamedev from './../assets/events/gamedev.jpeg'
-import security from './../assets/events/security.jpg';
-import candpython from './../assets/events/candpython.jpg';
 import collage from './../assets/events/events-collage.png';
-import UpcomingEvent from '../components/EventsCard.jsx'
+import UpcomingEvent from '../components/UpcomingEventsCard.jsx'
 import SyllabusAccordion from '../components/SyllabusAccordion';
 import SyllabusCards from '../components/SyllabusCards';
-import { Grid, Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function Events() {
   return (
@@ -61,6 +57,14 @@ export default function Events() {
         <SyllabusAccordion/>
         <SyllabusCards/>
       </div>
+      <div class='mt-6 text-xl font-sans font-bold text-center pb-2 px-16 flex justify-center'>
+          If you would like to talk to us about running a workshop at your school or see when we are running our next event, head over to the Contact Us page!
+      </div>
+        <Link to='/contactus' class='flex justify-center pb-7'>
+          <button class="bg-gradient-to-r from-indigo-300 to-blue-800 text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+            To Contact Us!
+          </button>
+        </Link>
     </div>
   );
 }
