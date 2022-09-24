@@ -25,7 +25,7 @@ export default function Resources() {
       <div class="text-center py-5">
         <h1 class="text-3xl gray-900 font-bold py-5">Articles</h1>
         <p class="gray-500 py-5">compclub dev is goated</p>
-        <div class="flex flex-row space-x-4 justify-center py-5">
+        <div class="flex sm:flex-col sm:space-y-4 md:flex-row md:space-x-4 md:space-y-0 justify-center">
           {Articles.map((articles) => {
             return (
               <ArticleCard
