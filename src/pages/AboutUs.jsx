@@ -98,7 +98,7 @@ export default function AboutUs() {
             // "padding-bottom": 50,
           }}>
 
-            <Card sx={{ maxWidth: 345, height: 450 }}>
+            <Card sx={{ maxWidth: 345, height: '100%'}}>
                   <CardMedia
                     component="img"
                     alt="SubCom Recruitment Banner"
@@ -108,7 +108,7 @@ export default function AboutUs() {
                   />
                   <CardContent>
                     <div id="name" class="text-lg font-bold">
-                      [CLOSED]Subcom Recruitment
+                      Subcom Recruitment
                     </div>
                     <div id="shortdescrip">
                       Being part of CompClub is a fun and rewarding volunteering experience! Join us for an 🥰unforgettable experience🥰 in raising future programmers 💻 and give back to the community‼️
@@ -125,7 +125,7 @@ export default function AboutUs() {
                   </CardActions>
             </Card>
 
-            <Card sx={{ maxWidth: 345, height: 450 }}>
+            <Card sx={{ maxWidth: 345, height: '100%'}}>
                   <CardMedia
                     component="img"
                     alt="Mentor Recruitment Banner"
@@ -272,6 +272,7 @@ export default function AboutUs() {
               <img src={penguin} alt="poco the penguin mascot" />
             </div>
           </div>
+          <br /><br />
         </div>
       </div>
 
