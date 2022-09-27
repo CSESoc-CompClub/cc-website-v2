@@ -88,7 +88,7 @@ export default function AboutUs() {
         </div>
 
         <div>
-          <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Recent Flagship Events</h3>
+          <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3>
           <div style={{
             display: 'flex',
             flexDirection: 'row',
@@ -108,10 +108,10 @@ export default function AboutUs() {
                   />
                   <CardContent>
                     <div id="name" class="text-lg font-bold">
-                      Subcom Recruitment
+                      Winter Workshop
                     </div>
                     <div id="shortdescrip">
-                      Being part of CompClub is a fun and rewarding volunteering experience! Join us for an 🥰unforgettable experience🥰 in raising future programmers 💻 and give back to the community‼️
+                      Our annual Winter Workshop held in July - covering interesting and relevant topics including: Game Dev 🎮, Cyber Security 🔐, Web Dev 🌏 and more, you are sure to learn 🧠something new and meet some new people along the way 🤗
                     </div>
                   </CardContent>
                   <CardActions>
@@ -135,10 +135,10 @@ export default function AboutUs() {
                   />
                   <CardContent>
                     <div id="name" class="text-lg font-bold">
-                      Mentor Recruitment
+                      Summer Workshop
                     </div>
                     <div id="shortdescrip">
-                      Being part of CompClub is a fun and rewarding volunteering experience! Join us for an 🥰unforgettable experience🥰 in raising future programmers 💻 and give back to the community‼️
+                      Our annual Summer Workshop held in January - a week of fun computing workshops! Whether you’re a beginner, intermediate, or have no experience with coding, we will certainly have something for everyone! 😄
                     </div>
                   </CardContent>
                   <CardActions>
