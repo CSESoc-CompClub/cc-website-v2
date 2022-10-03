@@ -25,8 +25,8 @@ export default function SyllabusAccordion() {
                                 Coding Basics
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p>
+                        <AccordionItemPanel class='pt-1'>
+                            <p class='border-[#0F182A] border-2 rounded-md'>
                                 Do you want to learn the basics of Computer Science? 
                                 At Compclub, we run introductory workshops on the coding languages C and Python, 
                                 to help introduce students to coding through practical 
@@ -40,8 +40,8 @@ export default function SyllabusAccordion() {
                                 Web Dev
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p>
+                        <AccordionItemPanel class='pt-1'>
+                            <p class='border-blue-900 border-2 rounded-md'>
                                 Ever wanted to build your own website?
                                 Come and learn about the wild wacky world of Web development.
                                 You’ll gain insight into the HTML and CSS languages, the backbones of
@@ -56,8 +56,8 @@ export default function SyllabusAccordion() {
                                 Security
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p>
+                        <AccordionItemPanel class='pt-1'>
+                            <p class='border-indigo-300 border-2 rounded-md'>
                                 Staying safe online is a lot more then just making sure your passwords 
                                 include a number and a special character! 
                                 Learn about the world of online security, 
@@ -72,8 +72,8 @@ export default function SyllabusAccordion() {
                                 Game Dev
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <p>
+                        <AccordionItemPanel class='pt-1'>
+                            <p class='border-indigo-200 border-2 rounded-md'>
                                 Ever wanted to see how computer games are made? 
                                 Come and learn about different aspects
                                 of game design and what it takes
