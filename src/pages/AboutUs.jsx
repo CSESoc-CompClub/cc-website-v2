@@ -4,15 +4,9 @@ import '../AboutUs.css';
 import penguin from '../assets/about-us/penguin.PNG'
 import About from "../components/about-us/about.png";
 import './../styles/events.css'
-import EventsCard from './../components/MasterCard.jsx'
-import UpcomingEvent from '../components/EventsCard.jsx'
 import banner from './../assets/about-us/about-us.jpg';
-import htmlcss from './../assets/events/html-css.jpg';
-import security from './../assets/events/security.jpg';
-import candpython from './../assets/events/candpython.jpg';
-import upcoming1 from './../assets/events/upcoming/Winterworkshops.jpeg'
-import MentorRecruitment from '../assets/about-us/mentor-recruitment.png';
-import SubComRecruitment from '../assets/about-us/subcom-recruitment.png';
+import SummerWorkshopBanner from '../assets/about-us/summer-workshop.jpg';
+import WinterWorkshopBanner from '../assets/about-us/winter-workshop.png';
 import GroupIcon from '@mui/icons-material/Group';
 import FlagIcon from '@mui/icons-material/Flag';
 import Card from '@mui/material/Card';
@@ -103,7 +97,7 @@ export default function AboutUs() {
                     component="img"
                     alt="SubCom Recruitment Banner"
                     height="140"
-                    image={SubComRecruitment}
+                    image={WinterWorkshopBanner}
                     sx={{ objectFit: "contain", height: 200 }}
                   />
                   <CardContent>
@@ -130,7 +124,7 @@ export default function AboutUs() {
                     component="img"
                     alt="Mentor Recruitment Banner"
                     height="200"
-                    image={MentorRecruitment}
+                    image={SummerWorkshopBanner}
                     sx={{ objectFit: "contain", height: 200 }}
                   />
                   <CardContent>
