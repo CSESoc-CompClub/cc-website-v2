@@ -127,7 +127,7 @@ export default function Home() {
             {/* <div class="md:flex sm:flex justify-center"> */}
             <div class="middle-section">
                 {/* <div class="md:flex-1 justify-self-center sm:flex-1"><img src={about_image} /></div> */}
-                <div><img src={about_image} /></div>
+                <div><img class="rounded-lg object-center	" src={about_image} /></div>
                 {/* <div class="md:flex-1 sm:flex-1"> */}
                 <div class="middle-text">
                     <p class="md:text-black text-5xl font-Inter font-semibold mb-8 sm:text-black">WHAT IS COMPCLUB</p>
