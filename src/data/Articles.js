@@ -2,7 +2,7 @@ const Articles = [
   {
     id: 1,
     link: 'https://tfpk.dev/blogs/unsw_cs_or_seng',
-    img: 'https://media-exp1.licdn.com/dms/image/C560BAQEcmwMoNBl6EA/company-logo_200_200/0/1642382030950?e=2147483647&v=beta&t=uIZnH8giphYUG4_d67ixU4_EfxllvdeskRyIQxM_hQE',
+    img: 'https://www.unsw.edu.au/content/dam/images/photos/campus/kensington/engineering/2021-09-comp-sci-eng-about-us/2021-09-comp-sci-eng-about-us-1.cropimg.width=335.crop=square.jpeg',
     imgAlt: 'Computer Science Banner',
     title: 'Computer Science VS Software Engineering at UNSW',
   },
