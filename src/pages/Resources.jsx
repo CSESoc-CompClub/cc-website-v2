@@ -11,6 +11,7 @@ export default function Resources() {
       {/* Workshop Section */}
       <div class="text-center py-5">
         <h1 class="text-3xl gray-900 font-bold py-5">Resources</h1>
+        <p class="gray-500">Google Drive links from our previous workshops!</p>
         <div class="flex justify-center mb-3 p-4">
           <div class="flex flex-col space-y-6">
             {Array.from({ length: 2 }).map((_, index) => (

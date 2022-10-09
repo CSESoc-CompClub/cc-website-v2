@@ -4,6 +4,5 @@ module.exports = {
     './src/pages/*.{html,js,jsx}',
     './src/components/*.{html,js,jsx}',
   ],
-
   plugins: [],
 }
