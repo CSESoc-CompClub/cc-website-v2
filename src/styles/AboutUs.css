@@ -86,11 +86,6 @@ li {
 }
 
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
 
 .mini-flex-row {
     display: flex;
@@ -104,15 +99,24 @@ li {
     }
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  display: 1;
-  padding: 25px;
-}
+
 
 h2 {
   font-weight: 700;
   font-size: 24px;
 }
 
+
+.flexible-col {
+    display: flex;
+    flex-direction: column;
+    display: 1;
+    padding: 25px;
+  }
+
+
+.flexible-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
