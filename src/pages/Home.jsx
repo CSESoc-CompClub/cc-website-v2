@@ -2,11 +2,17 @@ import { React, useState } from "react";
 import Header from "../components/Header"
 import banner from "../assets/home/compclub_banner.png"
 import "./CSS/Home.scss"
-import about_image from "../assets/home/about_image.png"
+import about_image from "../assets/home/comp-club-about-us.jpg"
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "@fontsource/inter";
 import '../styles.css';
+import carousel_one from "../assets/home/carousel-pics/comp_club_summer_workshop.jpg";
+import carousel_two from "../assets/home/carousel-pics/comp-club-3d-workshop.png";
+import carousel_three from "../assets/home/carousel-pics/comp-club-intro-to-python.png";
+import carousel_four from "../assets/home/carousel-pics/comp-club-microbits-workshop.png";
+import carousel_five from "../assets/home/carousel-pics/intro_to_c_banner.png";
+
 
 /*Header - Navbar
  Banner - 1452 x 553 
@@ -36,29 +42,29 @@ function Card(props) {
 
 const items = [
     <Card
-        img="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="The Everyday Salad"
-        description="Take your boring salads up a knotch. This recipe is perfect for lunch"
+        img={carousel_one}
+        title="CompClub Summer School"
+        description="Our annual Summer School teaching many coding languages and concepts in a week"
     />,
     <Card
-        img="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Simple Risotto"
-        description="Fear Risotto no more! This simple recipe is perfect for family dinners."
+        img={carousel_two}
+        title="3D Modelling Workshop"
+        description="Our 3D Modelling Workshop working with A-Fram technologies"
     />,
     <Card
-        img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Baked Cod with Vegetables"
-        description="Baked Cod with Vegetables. 30 minute meal!"
+        img={carousel_three}
+        title="Intro to Python Workshop"
+        description="Learning the basics of Python, including their data structures and building a game!"
     />,
     <Card
-        img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Baked Cod with Vegetables"
-        description="Baked Cod with Vegetables. 30 minute meal!"
+        img={carousel_four}
+        title="Micro Bits Workshop"
+        description="Let's explore hardware! Learn how to use a Micro Bit to do fun activities."
     />,
     <Card
-        img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Baked Cod with Vegetables"
-        description="Baked Cod with Vegetables. 30 minute meal!"
+        img={carousel_five}
+        title="Intro to C"
+        description="Learn the basics of the language of C, a fundamental language that is powerful."
     />
 ]
 
