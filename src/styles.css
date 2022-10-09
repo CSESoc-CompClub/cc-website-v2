@@ -128,6 +128,7 @@
 .middle-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5%;
   margin: 5%;
 
@@ -139,9 +140,10 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1450px) {
   .middle-section {
     display: flex;
     justify-content: center;
@@ -163,5 +165,7 @@
     /* flex-direction: row; */
   }
 
-
+  .middle-image {
+    width: 50%;
+  }
 }

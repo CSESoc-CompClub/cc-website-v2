@@ -21,8 +21,8 @@ import carousel_five from "../assets/home/carousel-pics/intro_to_c_banner.png";
 
 const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
+    980: { items: 2 },
+    1450: { items: 3 },
 };
 
 
@@ -127,13 +127,13 @@ export default function Home() {
             {/* <div class="md:flex sm:flex justify-center"> */}
             <div class="middle-section">
                 {/* <div class="md:flex-1 justify-self-center sm:flex-1"><img src={about_image} /></div> */}
-                <div><img class="rounded-lg object-center	" src={about_image} /></div>
+                <div class="w-1/3 middle-image"><img class="rounded-lg object-center" src={about_image} /></div>
                 {/* <div class="md:flex-1 sm:flex-1"> */}
                 <div class="middle-text">
                     <p class="md:text-black text-5xl font-Inter font-semibold mb-8 sm:text-black">WHAT IS COMPCLUB</p>
                     <p class="w-96 font-Inter font-normal text-xl mb-8"> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students.</p>
                     <button
-                        class="middle-button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-40 h-16"
+                        class="middle-button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-36 h-14"
                     >
                         <p class="decoration-white"> Learn more → </p>
                     </button>
@@ -142,7 +142,7 @@ export default function Home() {
 
             <div class="text-center py-5 pb-40">
                 <p class="text-5xl font-Inter font-semibold">UPCOMING EVENTS</p>
-                <div className="w-[90%] pt-[5%] pl-[10%] justify-items-center"> <AliceCarousel
+                <div class="w-[67%] pt-[5%] pl-[15%] justify-items-center sm:w-[90%] pt-[5%] pl-[27%] justify-items-center"> <AliceCarousel
                     mouseTracking
                     disableButtonsControls
                     items={items}
@@ -150,7 +150,7 @@ export default function Home() {
                     controlsStrategy="alternate"
                 />
                     <button
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold h-16 w-32 mt-4 rounded-full"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold h-14 w-36 mt-4 rounded-full"
                     >
                         <p class="decoration-white"> Learn more → </p>
                     </button>
