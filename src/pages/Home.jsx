@@ -6,6 +6,7 @@ import about_image from "../assets/home/about_image.png"
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "@fontsource/inter";
+import '../styles.css';
 
 /*Header - Navbar
  Banner - 1452 x 553 
@@ -43,6 +44,11 @@ const items = [
         img="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
         title="Simple Risotto"
         description="Fear Risotto no more! This simple recipe is perfect for family dinners."
+    />,
+    <Card
+        img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+        title="Baked Cod with Vegetables"
+        description="Baked Cod with Vegetables. 30 minute meal!"
     />,
     <Card
         img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
@@ -112,13 +118,16 @@ export default function Home() {
     return (
         <div>
             <img src={banner} class='object-contain h-1/4' />
-            <div class="grid grid-col-2 grid-flow-col ">
-                <div class="col-span-1 pl-[5%] pt-20 pb-20 pl-40 "><img src={about_image} /></div>
-                <div class="col-span-2 pt-28 pr-[10%]">
-                    <p class="text-5xl font-Inter font-semibold mb-8">WHAT IS COMPCLUB</p>
+            {/* <div class="md:flex sm:flex justify-center"> */}
+            <div class="middle-section">
+                {/* <div class="md:flex-1 justify-self-center sm:flex-1"><img src={about_image} /></div> */}
+                <div><img src={about_image} /></div>
+                {/* <div class="md:flex-1 sm:flex-1"> */}
+                <div class="middle-text">
+                    <p class="md:text-black text-5xl font-Inter font-semibold mb-8 sm:text-black">WHAT IS COMPCLUB</p>
                     <p class="w-96 font-Inter font-normal text-xl mb-8"> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students.</p>
                     <button
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-40 h-16"
+                        class="middle-button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-40 h-16"
                     >
                         <p class="decoration-white"> Learn more → </p>
                     </button>
