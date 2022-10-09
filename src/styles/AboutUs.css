@@ -1,0 +1,122 @@
+#faqs {
+    padding-left: 20px;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.faqsHeading {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+li {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#interestedInCC {
+    padding-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.interestedHeading {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.intro {
+    width: 60%;
+    font-size: 15px;
+}
+
+.contactBtn {
+    background-color: #059669;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 11px;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+
+#learnMore {
+    background-color: white;
+    color: #059669;
+    /* temporary outline until gradient background is set */
+    border: 1px solid #059669;
+}
+
+#learnMore:hover {
+    background-color: #059669;
+    color: white;
+}
+
+.contactBtn:hover {
+    background-color: white;
+    color: #059669;
+    /* temporary outline until gradient background is set */
+    border: 1px solid #059669;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#penguin {
+    margin-right:250px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.mini-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .flexible-row {
+        flex-direction: column;
+    }
+}
+
+
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+.flexible-col {
+    display: flex;
+    flex-direction: column;
+    display: 1;
+    padding: 25px;
+  }
+
+
+.flexible-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }

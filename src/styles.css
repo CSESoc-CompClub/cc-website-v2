@@ -122,7 +122,7 @@
   align-items: center;
   letter-spacing: -0.5px;
 
-  color: #0f172a;
+  color: #0F172A;
 }
 
 .middle-section {
@@ -169,3 +169,10 @@
     width: 50%;
   }
 }
+/* .logo {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+} */
