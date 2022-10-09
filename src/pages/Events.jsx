@@ -2,15 +2,11 @@ import React from 'react';
 import './../styles/events.css'
 import { ReactDOM } from 'react';
 import banner from './../assets/events/events-banner.png';
-import htmlcss from './../assets/events/html-css.jpg';
-import gamedev from './../assets/events/gamedev.jpeg'
-import security from './../assets/events/security.jpg';
-import candpython from './../assets/events/candpython.jpg';
 import collage from './../assets/events/events-collage.png';
-import WorkShopCard from '../components/WorkShopCard.jsx'
-import UpcomingEvent from '../components/EventsCard.jsx'
-import WorkShopCard2 from '../components/WorkShopCard2';
-import { Grid, Card, CardActions, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import UpcomingEvent from '../components/UpcomingEventsCard.jsx'
+import SyllabusAccordion from '../components/SyllabusAccordion';
+import SyllabusCards from '../components/SyllabusCards';
+import { Link } from 'react-router-dom';
 
 export default function Events() {
   return (
@@ -20,7 +16,7 @@ export default function Events() {
         <div class="flex justify-center mb-3 p-4">
           <div>
             <div class="shadow-md bg-sky-500 rounded-3xl">
-              <div class="shadow-md bg-[#0f182a] max-w-lg rounded-3xl">
+              <div class="shadow-md bg-gradient-to-r from-indigo-300 to-blue-800 max-w-lg rounded-3xl">
                 <div class="border-b border-white-300 rounded-t-md p-4">
                   <div class="flex justify-center text-2xl text-white font-bold">
                     Upcoming Events
@@ -58,10 +54,17 @@ export default function Events() {
           <img src={collage} alt='' />
         </div>
         <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Some of what we teach</h3>
-        <div class='py-10 flex flex-row items-center justify-center w-50 h-500'>
-          <WorkShopCard2 image={security}/>
-        </div>
+        <SyllabusAccordion/>
+        <SyllabusCards/>
       </div>
+      <div class='mt-6 text-xl font-sans font-bold text-center pb-2 px-16 flex justify-center'>
+          If you would like to talk to us about running a workshop at your school or see when we are running our next event, head over to the Contact Us page!
+      </div>
+        <Link to='/contactus' class='flex justify-center pb-7'>
+          <button class="bg-gradient-to-r from-indigo-300 to-blue-800 text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+            To Contact Us!
+          </button>
+        </Link>
     </div>
   );
 }
