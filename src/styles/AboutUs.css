@@ -94,7 +94,7 @@ li {
 }
 
 @media screen and (max-width: 800px) {
-    .flex-row {
+    .flexible-row {
         flex-direction: column;
     }
 }
