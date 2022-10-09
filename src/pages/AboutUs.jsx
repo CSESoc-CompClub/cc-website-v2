@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import '../AboutUs.css';
+import '../styles/AboutUs.css'
 import penguin from '../assets/about-us/penguin.PNG'
 import About from "../components/about-us/about.png";
 import './../styles/events.css'
@@ -29,8 +29,8 @@ export default function AboutUs() {
     <div>
       <img src={banner} alt='' class='object-contain h-1/4' />
       <div class='mt-4 mx-12 center'>
-        <div className="flex-row">
-          <div className="flex-col">
+        <div className="flexible-row">
+          <div className="flexible-col">
             <div>
               {/* <h2>About Compclub</h2> */}
               <h3 class='mt-6 text-3xl font-sans font-bold'>About Compclub</h3>

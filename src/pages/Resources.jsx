@@ -11,7 +11,6 @@ export default function Resources() {
       {/* Workshop Section */}
       <div class="text-center py-5">
         <h1 class="text-3xl gray-900 font-bold py-5">Resources</h1>
-        <p class="gray-500 py-5">i love compclub</p>
         <div class="flex justify-center mb-3 p-4">
           <div class="flex flex-col space-y-6">
             {Array.from({ length: 2 }).map((_, index) => (
@@ -24,7 +23,6 @@ export default function Resources() {
       {/* Articles Section */}
       <div class="text-center py-5">
         <h1 class="text-3xl gray-900 font-bold py-5">Articles</h1>
-        <p class="gray-500 py-5">compclub dev is goated</p>
         <div class="flex sm:flex-col sm:space-y-4 md:flex-row md:space-x-4 md:space-y-0 justify-center">
           {Articles.map((articles) => {
             return (
