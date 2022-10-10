@@ -13,7 +13,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-
 import {
   Accordion,
   AccordionSummary,
@@ -74,7 +73,7 @@ export default function AboutUs() {
               </div>
             </div>
 
-          </div> 
+          </div>
 
           <div className="center-vertical">
             <img src={About} width={1580} alt="Logo" />
@@ -86,64 +85,64 @@ export default function AboutUs() {
           <div style={{
             display: 'flex',
             flexDirection: 'row',
+            flexWrap: 'wrap',
             "justify-content": 'space-evenly',
             "align-items": 'center',
             // "padding-top": 50,
             // "padding-bottom": 50,
           }}>
 
-            <Card sx={{ maxWidth: 345, height: '100%'}}>
-                  <CardMedia
-                    component="img"
-                    alt="SubCom Recruitment Banner"
-                    height="140"
-                    image={WinterWorkshopBanner}
-                    sx={{ objectFit: "contain", height: 200 }}
-                  />
-                  <CardContent>
-                    <div id="name" class="text-lg font-bold">
-                      Winter Workshop
-                    </div>
-                    <div id="shortdescrip">
-                      Our annual Winter Workshop held in July - covering interesting and relevant topics including: Game Dev 🎮, Cyber Security 🔐, Web Dev 🌏 and more, you are sure to learn 🧠something new and meet some new people along the way 🤗
-                    </div>
-                  </CardContent>
-                  <CardActions>
-                    <div id="link">
-                      <a href={"https://www.facebook.com/events/1004563656802334/"} target="_blank">
-                        <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
-                          Learn more and sign up!
-                        </button>
-                      </a>
-                    </div>
-                  </CardActions>
+            <Card sx={{ maxWidth: 345, height: '100%', marginTop: 3 }}>
+              <CardMedia
+                component="img"
+                alt="SubCom Recruitment Banner"
+                height="140"
+                image={WinterWorkshopBanner}
+                sx={{ objectFit: "contain", height: 200 }}
+              />
+              <CardContent>
+                <div id="name" class="text-lg font-bold">
+                  Winter Workshop
+                </div>
+                <div id="shortdescrip">
+                  Our annual Winter Workshop held in July - covering interesting and relevant topics including: Game Dev 🎮, Cyber Security 🔐, Web Dev 🌏 and more, you are sure to learn 🧠something new and meet some new people along the way 🤗
+                </div>
+              </CardContent>
+              <CardActions>
+                <div id="link">
+                  <a href={"https://www.facebook.com/events/1004563656802334/"} target="_blank">
+                    <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                      Learn more and sign up!
+                    </button>
+                  </a>
+                </div>
+              </CardActions>
             </Card>
-
-            <Card sx={{ maxWidth: 345, height: '100%'}}>
-                  <CardMedia
-                    component="img"
-                    alt="Mentor Recruitment Banner"
-                    height="200"
-                    image={SummerWorkshopBanner}
-                    sx={{ objectFit: "contain", height: 200 }}
-                  />
-                  <CardContent>
-                    <div id="name" class="text-lg font-bold">
-                      Summer Workshop
-                    </div>
-                    <div id="shortdescrip">
-                      Our annual Summer Workshop held in January - a week of fun computing workshops! Whether you’re a beginner, intermediate, or have no experience with coding, we will certainly have something for everyone! 😄
-                    </div>
-                  </CardContent>
-                  <CardActions>
-                    <div id="link">
-                      <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
-                        <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
-                          Learn more and sign up!
-                        </button>
-                      </a>
-                    </div>
-                  </CardActions>
+            <Card sx={{ maxWidth: 345, height: '100%', marginTop: 3 }}>
+              <CardMedia
+                component="img"
+                alt="Mentor Recruitment Banner"
+                height="200"
+                image={SummerWorkshopBanner}
+                sx={{ objectFit: "contain", height: 200 }}
+              />
+              <CardContent>
+                <div id="name" class="text-lg font-bold">
+                  Summer Workshop
+                </div>
+                <div id="shortdescrip">
+                  Our annual Summer Workshop held in January - a week of fun computing workshops! Whether you’re a beginner, intermediate, or have no experience with coding, we will certainly have something for everyone! 😄
+                </div>
+              </CardContent>
+              <CardActions>
+                <div id="link">
+                  <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
+                    <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                      Learn more and sign up!
+                    </button>
+                  </a>
+                </div>
+              </CardActions>
             </Card>
 
             {/* <div id="event" class="flex p-4">
@@ -245,24 +244,24 @@ export default function AboutUs() {
           </div>
           <br /><br />
 
-          <div class='flex'>
-            <div class='w-2/3'>
+          <div class='flex flex-wrap sm:flex-nowrap'>
+            <div class='sm:w-2/3'>
               <h3 class='mt-6 text-3xl font-sans font-bold'>Interested in CompClub?</h3>
               <br />
               <p class='text-lg'>
                 Get in touch through our socials, or checkout our Contact Us page!
               </p>
               <br /><br />
-              <div class='ml-20 flex space-x-10 justify-start'>
-                <button class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" onClick={() => navigate('/contactus')}>
+              <div class='flex flex-wrap justify-start'>
+                <button class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" onClick={() => navigate('/contactus')} style={{ marginLeft: 10, marginBottom: 5 }}>
                   Contact us
                 </button>
-                <button class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded">
+                <button class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" style={{ marginLeft: 10, marginBottom: 5 }}>
                   Learn more
                 </button>
               </div>
             </div>
-            <div class='w-1/3'>
+            <div class='sm:w-1/3'>
               <img src={penguin} alt="poco the penguin mascot" />
             </div>
           </div>
