@@ -1,11 +1,18 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import Header from "../components/Header"
-import banner from "../assets/compclub_banner.png"
+import banner from "../assets/home/compclub_banner.png"
 import "./CSS/Home.scss"
-import about_image from "../assets/about_image.png"
+import about_image from "../assets/home/comp-club-about-us.jpg"
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "@fontsource/inter";
+import '../styles.css';
+import carousel_one from "../assets/home/carousel-pics/comp_club_summer_workshop.jpg";
+import carousel_two from "../assets/home/carousel-pics/comp-club-3d-workshop.png";
+import carousel_three from "../assets/home/carousel-pics/comp-club-intro-to-python.png";
+import carousel_four from "../assets/home/carousel-pics/comp-club-microbits-workshop.png";
+import carousel_five from "../assets/home/carousel-pics/intro_to_c_banner.png";
+
 
 /*Header - Navbar
  Banner - 1452 x 553 
@@ -14,8 +21,8 @@ import "@fontsource/inter";
 
 const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
+    980: { items: 2 },
+    1450: { items: 3 },
 };
 
 
@@ -35,24 +42,29 @@ function Card(props) {
 
 const items = [
     <Card
-        img="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="The Everyday Salad"
-        description="Take your boring salads up a knotch. This recipe is perfect for lunch"
+        img={carousel_one}
+        title="CompClub Summer School"
+        description="Our annual Summer School teaching many coding languages and concepts in a week"
     />,
     <Card
-        img="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Simple Risotto"
-        description="Fear Risotto no more! This simple recipe is perfect for family dinners."
+        img={carousel_two}
+        title="3D Modelling Workshop"
+        description="Our 3D Modelling Workshop working with A-Fram technologies"
     />,
     <Card
-        img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Baked Cod with Vegetables"
-        description="Baked Cod with Vegetables. 30 minute meal!"
+        img={carousel_three}
+        title="Intro to Python Workshop"
+        description="Learning the basics of Python, including their data structures and building a game!"
     />,
     <Card
-        img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Baked Cod with Vegetables"
-        description="Baked Cod with Vegetables. 30 minute meal!"
+        img={carousel_four}
+        title="Micro Bits Workshop"
+        description="Let's explore hardware! Learn how to use a Micro Bit to do fun activities."
+    />,
+    <Card
+        img={carousel_five}
+        title="Intro to C"
+        description="Learn the basics of the language of C, a fundamental language that is powerful."
     />
 ]
 
@@ -110,41 +122,40 @@ export default function Home() {
     };
 
     return (
-        <>
-            <div className='banner_Homepage'>
-                <img src={banner} />
-            </div>
-            <div className="mid_Homepage">
-                <div className="home_about_image"><img src={about_image} /></div>
-                <div className='what_is_compclub_homepage'>
-                    WHAT IS COMPCLUB?
+        <div>
+            <img src={banner} class='object-contain h-1/4' />
+            {/* <div class="md:flex sm:flex justify-center"> */}
+            <div class="middle-section">
+                {/* <div class="md:flex-1 justify-self-center sm:flex-1"><img src={about_image} /></div> */}
+                <div class="w-1/3 middle-image"><img class="rounded-lg object-center" src={about_image} /></div>
+                {/* <div class="md:flex-1 sm:flex-1"> */}
+                <div class="middle-text">
+                    <p class="md:text-black text-5xl font-Inter font-semibold mb-8 sm:text-black">WHAT IS COMPCLUB</p>
+                    <p class="w-96 font-Inter font-normal text-xl mb-8"> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students.</p>
+                    <button
+                        class="middle-button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-36 h-14"
+                    >
+                        <p class="decoration-white"> Learn more → </p>
+                    </button>
                 </div>
-                <div className="mid_bio_text_homepage"> <p> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students. </p> </div>
-                <button
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                    className='button_homepage_learn_more'
-                >
-                    <p style={{ color: "white" }}> Learn more → </p>
-                </button>
             </div>
-            <div className="bottom_Homepage">
-                <div className="title_bottom_homepage">UPCOMING EVENTS</div>
-                <div className="carousel_div_bottom"> <AliceCarousel
+
+            <div class="text-center py-5 pb-40">
+                <p class="text-5xl font-Inter font-semibold">UPCOMING EVENTS</p>
+                <div class="w-[67%] pt-[5%] pl-[15%] justify-items-center sm:w-[90%] pt-[5%] pl-[27%] justify-items-center"> <AliceCarousel
                     mouseTracking
+                    disableButtonsControls
                     items={items}
                     responsive={responsive}
                     controlsStrategy="alternate"
                 />
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold h-14 w-36 mt-4 rounded-full"
+                    >
+                        <p class="decoration-white"> Learn more → </p>
+                    </button>
                 </div>
-                <button
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                    className='button_homepage_events'
-                >
-                    <p style={{ color: "white" }}> Learn more → </p>
-                </button>
-
-
             </div>
-        </>
+        </div >
     )
 }

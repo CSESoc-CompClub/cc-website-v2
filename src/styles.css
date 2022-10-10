@@ -36,13 +36,7 @@
   /* border: 3px solid blue; */
 }
 
-.mid_bio_text_homepage {
-  position: relative;
-  height: 347px;
-  width: 500px;
-  bottom: 423px;
-  left: 950px;
-
+.inter_text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -67,11 +61,10 @@
 }
 
 .button_homepage_learn_more {
-  position: relative;
   width: 204px;
   height: 50px;
-  left: 954px;
-  bottom: 429px;
+  position: relative;
+  bottom:100px;
 
   background: #6893fb;
   border-radius: 20px;
@@ -88,22 +81,14 @@
 }
 
 .what_is_compclub_homepage {
-  position: relative;
-  width: 300px;
-  bottom: 400px;
-  left: 950px;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
   line-height: 48px;
-  /* or 100% */
-
   display: flex;
   align-items: center;
   letter-spacing: -0.5px;
-
   color: #0f172a;
 }
 
@@ -111,7 +96,7 @@
   position: relative;
   height: 400px;
   width: 1000px;
-  top: 120px;
+  top: 70px;
   left: 500px;
   /* border : 3px solid red; */
 }
@@ -140,6 +125,50 @@
   color: #0F172A;
 }
 
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin: 5%;
+
+}
+
+
+.middle-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+}
+
+@media (max-width: 1450px) {
+  .middle-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10%;   
+    flex-direction: column;
+
+  }
+  
+  .middle-text {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    /* flex-direction: row; */
+  }
+
+  .middle-image {
+    width: 50%;
+  }
+}
 /* .logo {
   width: 120px;
   height: 30px;
