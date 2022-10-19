@@ -1,27 +1,26 @@
-import UpcomingEvent from './EventsCard.jsx';
+import React from 'react';
 import MentorRecruitment from '../assets/about-us/mentor-recruitment.png';
-import SubComRecruitment from '../assets/about-us/subcom-recruitment.png';
 
-export default function EventsCard(props) {
+export default function EventsCard({ name, description, link }) {
   return (
-    <div id="event" class="flex justify-center p-4">
-    <div> 
-        <img src={MentorRecruitment} alt='' class='object-contain' />
-        <div id="name" class="text-lg font-bold">
-          {props.name}
+    <div id="event" className="flex justify-center p-4">
+      <div>
+        <img src={MentorRecruitment} alt="" className="object-contain" />
+        <div id="name" className="text-lg font-bold">
+          {name}
         </div>
         <div id="shortdescrip">
-          {props.description}
+          {description}
         </div>
-        <br/>
+        <br />
         <div id="link">
-          <a href={props.link} target="_blank">
-            <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+          <a href={link} target="_blank" rel="noreferrer">
+            <button type="button" className="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
               Learn more and sign up!
             </button>
           </a>
         </div>
+      </div>
     </div>
-  </div>
   );
 }

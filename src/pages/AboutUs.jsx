@@ -1,12 +1,8 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import '../styles/AboutUs.css'
-import penguin from '../assets/about-us/penguin.png'
-import About from "../components/about-us/about.png";
-import './../styles/events.css'
-import banner from './../assets/about-us/about-us.jpg';
-import SummerWorkshopBanner from '../assets/about-us/summer-workshop.jpg';
-import WinterWorkshopBanner from '../assets/about-us/winter-workshop.png';
+/* eslint-disable max-len */
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles/AboutUs.css';
+import '../styles/events.css';
 import GroupIcon from '@mui/icons-material/Group';
 import FlagIcon from '@mui/icons-material/Flag';
 import Card from '@mui/material/Card';
@@ -18,21 +14,25 @@ import {
   AccordionSummary,
   AccordionDetails,
   Typography,
-  Button
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import WinterWorkshopBanner from '../assets/about-us/winter-workshop.png';
+import SummerWorkshopBanner from '../assets/about-us/summer-workshop.jpg';
+import banner from '../assets/about-us/about-us.jpg';
+import About from '../components/about-us/about.png';
+import penguin from '../assets/about-us/penguin.png';
 
 export default function AboutUs() {
   const navigate = useNavigate();
   return (
     <div>
-      <img src={banner} alt='' class='object-contain h-1/4' />
-      <div class='mt-4 mx-12 center'>
+      <img src={banner} alt="" className="object-contain h-1/4" />
+      <div className="mt-4 mx-12 center">
         <div className="flexible-row">
           <div className="flexible-col">
             <div>
               {/* <h2>About Compclub</h2> */}
-              <h3 class='mt-6 text-3xl font-sans font-bold'>About Compclub</h3>
+              <h3 className="mt-6 text-3xl font-sans font-bold">About Compclub</h3>
               CompClub is a portfolio under the student run UNSW organisation CSESoc that promotes computing to high school students
               throughout the year. By running a variety of freeworkshops throughout the year, we aim to create a fun, collaborative
               environment for students to develop their interests and hone their programming skills along like-minded students.
@@ -47,25 +47,30 @@ export default function AboutUs() {
                 Students taught
               </div>
             </div> */}
-            <div className="mini-flex-row" style={{
-              "justify-content": 'space-evenly',
-              "padding-top": 10,
-            }}>
+            <div
+              className="mini-flex-row"
+              style={{
+                'justify-content': 'space-evenly',
+                'padding-top': 10,
+              }}
+            >
               <div className="mini-flex-row">
-                <GroupIcon sx={{ fontSize: "50px" }} />
+                <GroupIcon sx={{ fontSize: '50px' }} />
                 <div style={{
-                  "padding-left": 15,
-                }}>
+                  'padding-left': 15,
+                }}
+                >
                   <h2>300+</h2>
                   Students Reached
                 </div>
 
               </div>
               <div className="mini-flex-row">
-                <FlagIcon sx={{ fontSize: "50px" }} />
+                <FlagIcon sx={{ fontSize: '50px' }} />
                 <div style={{
-                  "padding-left": 15,
-                }}>
+                  'padding-left': 15,
+                }}
+                >
                   <h2>20+</h2>
                   Events
                 </div>
@@ -81,16 +86,17 @@ export default function AboutUs() {
         </div>
 
         <div>
-          <h3 class='mt-6 text-3xl font-sans font-bold text-center'>Flagship Events</h3>
+          <h3 className="mt-6 text-3xl font-sans font-bold text-center">Flagship Events</h3>
           <div style={{
             display: 'flex',
             flexDirection: 'row',
             flexWrap: 'wrap',
-            "justify-content": 'space-evenly',
-            "align-items": 'center',
+            'justify-content': 'space-evenly',
+            'align-items': 'center',
             // "padding-top": 50,
             // "padding-bottom": 50,
-          }}>
+          }}
+          >
 
             <Card sx={{ maxWidth: 345, height: '100%', marginTop: 3 }}>
               <CardMedia
@@ -98,10 +104,10 @@ export default function AboutUs() {
                 alt="SubCom Recruitment Banner"
                 height="140"
                 image={WinterWorkshopBanner}
-                sx={{ objectFit: "contain", height: 200 }}
+                sx={{ objectFit: 'contain', height: 200 }}
               />
               <CardContent>
-                <div id="name" class="text-lg font-bold">
+                <div id="name" className="text-lg font-bold">
                   Winter Workshop
                 </div>
                 <div id="shortdescrip">
@@ -110,8 +116,8 @@ export default function AboutUs() {
               </CardContent>
               <CardActions>
                 <div id="link">
-                  <a href={"https://www.facebook.com/events/1004563656802334/"} target="_blank">
-                    <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                  <a href="https://www.facebook.com/events/1004563656802334/" target="_blank" rel="noreferrer">
+                    <button type="button" className="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
                       Learn more and sign up!
                     </button>
                   </a>
@@ -124,10 +130,10 @@ export default function AboutUs() {
                 alt="Mentor Recruitment Banner"
                 height="200"
                 image={SummerWorkshopBanner}
-                sx={{ objectFit: "contain", height: 200 }}
+                sx={{ objectFit: 'contain', height: 200 }}
               />
               <CardContent>
-                <div id="name" class="text-lg font-bold">
+                <div id="name" className="text-lg font-bold">
                   Summer Workshop
                 </div>
                 <div id="shortdescrip">
@@ -136,8 +142,8 @@ export default function AboutUs() {
               </CardContent>
               <CardActions>
                 <div id="link">
-                  <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
-                    <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                  <a href="https://www.facebook.com/events/744066593508315/?ref=newsfeed" target="_blank" rel="noreferrer">
+                    <button type="button" className="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
                       Learn more and sign up!
                     </button>
                   </a>
@@ -145,10 +151,10 @@ export default function AboutUs() {
               </CardActions>
             </Card>
 
-            {/* <div id="event" class="flex p-4">
-              <div> 
-                  <img src={MentorRecruitment} alt='' class='object-contain' />
-                  <div id="name" class="text-lg font-bold">
+            {/* <div id="event" className="flex p-4">
+              <div>
+                  <img src={MentorRecruitment} alt='' className='object-contain' />
+                  <div id="name" className="text-lg font-bold">
                     Mentor Recruitment
                   </div>
                   <div id="shortdescrip">
@@ -157,7 +163,7 @@ export default function AboutUs() {
                   <br/>
                   <div id="link">
                     <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
-                      <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                      <button className="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
                         Learn more and sign up!
                       </button>
                     </a>
@@ -165,10 +171,10 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <div id="event" class="flex p-4">
-              <div> 
-                  <img src={SubComRecruitment} alt='' class='object-contain' />
-                  <div id="name" class="text-lg font-bold">
+            <div id="event" className="flex p-4">
+              <div>
+                  <img src={SubComRecruitment} alt='' className='object-contain' />
+                  <div id="name" className="text-lg font-bold">
                     Mentor Recruitment
                   </div>
                   <div id="shortdescrip">
@@ -177,7 +183,7 @@ export default function AboutUs() {
                   <br/>
                   <div id="link">
                     <a href={"https://www.facebook.com/events/744066593508315/?ref=newsfeed"} target="_blank">
-                      <button class="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+                      <button className="bg-[#0f182a] text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
                         Learn more and sign up!
                       </button>
                     </a>
@@ -187,15 +193,16 @@ export default function AboutUs() {
 
           </div>
 
-          {/* <div class="flex justify-center">
-            <button class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded" onClick={() => navigate('/events')}>
+          {/* <div className="flex justify-center">
+            <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded" onClick={() => navigate('/events')}>
               See events
             </button>
           </div> */}
 
-          <br /><br />
+          <br />
+          <br />
           <div>
-            <h3 class='mt-6 text-3xl font-sans font-bold text-center'>FAQs</h3>
+            <h3 className="mt-6 text-3xl font-sans font-bold text-center">FAQs</h3>
           </div>
 
           <div>
@@ -205,10 +212,10 @@ export default function AboutUs() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography class='text-lg font-semibold'>What types of coding workshops do we run?</Typography>
+                <Typography className="text-lg font-semibold">What types of coding workshops do we run?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography class='text-lg'>
+                <Typography className="text-lg">
                   We run all types of beginner workshops - web dev, python, C, etc.
                 </Typography>
               </AccordionDetails>
@@ -219,10 +226,10 @@ export default function AboutUs() {
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography class='text-lg font-semibold'>Is it held in UNSW or schools?</Typography>
+                <Typography className="text-lg font-semibold">Is it held in UNSW or schools?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography class='text-lg'>
+                <Typography className="text-lg">
                   Both! Depends on the workshop.
                 </Typography>
               </AccordionDetails>
@@ -233,47 +240,50 @@ export default function AboutUs() {
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography class='text-lg font-semibold'>Do we have to be in specific grade to attend?</Typography>
+                <Typography className="text-lg font-semibold">Do we have to be in specific grade to attend?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography class='text-lg'>
+                <Typography className="text-lg">
                   No! Our workshops are open to all high school students!
                 </Typography>
               </AccordionDetails>
             </Accordion>
           </div>
-          <br /><br />
+          <br />
+          <br />
 
-          <div class='flex flex-wrap sm:flex-nowrap'>
-            <div class='sm:w-2/3'>
-              <h3 class='mt-6 text-3xl font-sans font-bold'>Interested in CompClub?</h3>
+          <div className="flex flex-wrap sm:flex-nowrap">
+            <div className="sm:w-2/3">
+              <h3 className="mt-6 text-3xl font-sans font-bold">Interested in CompClub?</h3>
               <br />
-              <p class='text-lg'>
+              <p className="text-lg">
                 Get in touch through our socials, or checkout our Contact Us page!
               </p>
-              <br /><br />
-              <div class='flex flex-wrap justify-start'>
-                <button class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" onClick={() => navigate('/contactus')} style={{ marginLeft: 10, marginBottom: 5 }}>
+              <br />
+              <br />
+              <div className="flex flex-wrap justify-start">
+                <button type="button" className="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" onClick={() => navigate('/contactus')} style={{ marginLeft: 10, marginBottom: 5 }}>
                   Contact us
                 </button>
-                <button class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" style={{ marginLeft: 10, marginBottom: 5 }}>
+                <button type="button" className="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" style={{ marginLeft: 10, marginBottom: 5 }}>
                   Learn more
                 </button>
               </div>
             </div>
-            <div class='sm:w-1/3'>
+            <div className="sm:w-1/3">
               <img src={penguin} alt="poco the penguin mascot" />
             </div>
           </div>
-          <br /><br />
+          <br />
+          <br />
         </div>
       </div>
 
       {/* Tailwind accordian doesn't seem to work */}
-      {/* <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
-          <h2 class="accordion-header mb-0" id="flush-headingOne">
-            <button class="accordion-button
+      {/* <div className="accordion accordion-flush" id="accordionFlushExample">
+        <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+          <h2 className="accordion-header mb-0" id="flush-headingOne">
+            <button className="accordion-button
           relative
           flex
           items-center
@@ -290,16 +300,16 @@ export default function AboutUs() {
               Accordion Item #1
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse border-0 collapse show"
+          <div id="flush-collapseOne" className="accordion-collapse border-0 collapse show"
             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
+            <div className="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
               demonstrate
               the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
           </div>
         </div>
-        <div class="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
-          <h2 class="accordion-header mb-0" id="flush-headingTwo">
-            <button class="accordion-button
+        <div className="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+          <h2 className="accordion-header mb-0" id="flush-headingTwo">
+            <button className="accordion-button
           collapsed
           relative
           flex
@@ -317,18 +327,18 @@ export default function AboutUs() {
               Accordion Item #2
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo"
+          <div id="flush-collapseTwo" className="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo"
             data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
+            <div className="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
               demonstrate
               the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
               being
               filled with some actual content.</div>
           </div>
         </div>
-        <div class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
-          <h2 class="accordion-header mb-0" id="flush-headingThree">
-            <button class="accordion-button
+        <div className="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
+          <h2 className="accordion-header mb-0" id="flush-headingThree">
+            <button className="accordion-button
           collapsed
           relative
           flex
@@ -346,9 +356,9 @@ export default function AboutUs() {
               Accordion Item #3
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree"
             data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
+            <div className="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
               demonstrate
               the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
               happening here in terms of content, but just filling up the space to make it look, at least at first
@@ -359,5 +369,5 @@ export default function AboutUs() {
       </div> */}
 
     </div>
-  )
+  );
 }

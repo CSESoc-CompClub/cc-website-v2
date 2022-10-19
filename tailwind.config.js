@@ -3,15 +3,15 @@ module.exports = {
   content: [
     './src/pages/*.{html,js,jsx}',
     './src/components/*.{html,js,jsx}',
+    './index.html',
   ],
   theme: {
     extend: {
       screens: {
         sm: '640px',
-        md: '1024px'
-      }
-    }
+        md: '1024px',
+      },
+    },
   },
   plugins: [],
-}
-
+};

@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -10,15 +11,15 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='body'>
+    <div className="body">
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/aboutus' element={<AboutUs />} />
-          <Route path='/events' element={<Events />} />
-          <Route path='/contactus' element={<ContactUs />} />
-          <Route path='/resources' element={<Resources />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/resources" element={<Resources />} />
         </Routes>
       </BrowserRouter>
       <Footer />
