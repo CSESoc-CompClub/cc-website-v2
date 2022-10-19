@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/AboutUs.css'
-import penguin from '../assets/about-us/penguin.PNG'
+import penguin from '../assets/about-us/penguin.png'
 import About from "../components/about-us/about.png";
 import './../styles/events.css'
 import banner from './../assets/about-us/about-us.jpg';

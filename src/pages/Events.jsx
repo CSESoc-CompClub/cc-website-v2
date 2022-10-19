@@ -1,6 +1,5 @@
 import React from 'react';
-import './../styles/events.css'
-import { ReactDOM } from 'react';
+import './../styles/events.css';
 import banner from './../assets/events/events-banner.png';
 import collage from './../assets/events/events-collage.png';
 import UpcomingEvent from '../components/UpcomingEventsCard.jsx'
