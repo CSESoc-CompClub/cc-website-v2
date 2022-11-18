@@ -143,7 +143,14 @@ export default function Home() {
             <div class="text-center py-5 pb-40">
                 <p class="text-5xl font-Inter font-semibold">UPCOMING EVENTS</p>
                 <div className="w-[90%] pt-[5%] pl-[10%] justify-items-center"> <AliceCarousel
-                    mouseTracking
+                    autoPlay
+                    autoPlayStrategy="none"
+                    autoPlayInterval={1000}
+                    animationDuration={1000}
+                    animationType="fadeout"
+                    infinite
+                    touchTracking={false}
+                    disableDotsControls
                     disableButtonsControls
                     items={items}
                     responsive={responsive}
