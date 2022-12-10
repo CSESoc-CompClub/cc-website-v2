@@ -23,6 +23,7 @@ const responsive = {
     0: { items: 1 },
     568: { items: 2 },
     1024: { items: 3 },
+
 };
 
 
@@ -144,6 +145,7 @@ export default function Home() {
                 <p class="text-5xl font-Inter font-semibold">UPCOMING EVENTS</p>
                 <div className="w-[85%] pt-[5%] pl-[18%] justify-items-center"> <AliceCarousel
                     autoPlay
+                    paddingLeft={100}
                     autoPlayStrategy="none"
                     autoPlayInterval={1000}
                     animationDuration={1000}
