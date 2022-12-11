@@ -98,30 +98,37 @@ export default function Home() {
                 <p class="text-5xl font-Inter font-semibold">PREVIOUS EVENTS</p>
                 <div className="flex-initial pt-[3%] justify-items-center w-[70%] m-auto">
                      <div className = "shadow-md">
-                     <AliceCarousel
-                    autoPlay
-                    autoPlayStrategy="none"
-                    autoPlayInterval={1500}
-                    animationDuration={2000}
-                    animationType="fadeout"
-                    infinite
-                    touchTracking={false}
-                    disableDotsControls
-                    disableButtonsControls
-                    items={items}
-                    responsive={responsive}
-                    controlsStrategy="alternate"
-                />
-                </div>
-                <Link class = "pt-[1%]" to ="/events">
-                    <button
-                        className="btn"
-                    >
-                        <p> Learn more → </p>
-                    </button>
-                </Link>
+                        <AliceCarousel
+                        autoPlay
+                        autoPlayStrategy="none"
+                        autoPlayInterval={1500}
+                        animationDuration={2000}
+                        animationType="fadeout"
+                        infinite
+                        touchTracking={false}
+                        disableDotsControls
+                        disableButtonsControls
+                        items={items}
+                        responsive={responsive}
+                        controlsStrategy="alternate"
+                        />
+                    </div>
+                    <Link class = "pt-[1%]" to ="/events">
+                        <button className="btn">
+                            Learn more →
+                        </button>
+                    </Link>
                 </div>
             </div>
-        </div >
+
+            <div>
+                <div>Join our socials to stay invovled</div>
+                <div>Otherwise, sign up to our maillist to recieve updates when a new event is happening</div>
+
+            </div>
+
+
+
+        </div>
     )
 }
