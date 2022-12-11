@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import Header from "../components/Header"
 import banner from "../assets/home/compclub_banner.png"
+
 import "./CSS/Home.scss"
 import about_image from "../assets/home/comp-club-about-us.jpg"
 import AliceCarousel from 'react-alice-carousel';
@@ -12,6 +13,7 @@ import carousel_two from "../assets/home/carousel-pics/comp-club-3d-workshop.png
 import carousel_three from "../assets/home/carousel-pics/comp-club-intro-to-python.png";
 import carousel_four from "../assets/home/carousel-pics/comp-club-microbits-workshop.png";
 import carousel_five from "../assets/home/carousel-pics/intro_to_c_banner.png";
+import { Link } from 'react-router-dom';
 
 
 /*Header - Navbar
@@ -123,7 +125,7 @@ export default function Home() {
 
     return (
         <div>
-            <img src={banner} class='object-contain h-1/4' />
+            <img src={banner} class='object-contain h-1/4 w-full'/>
             {/* <div class="md:flex sm:flex justify-center"> */}
             <div class="middle-section">
                 {/* <div class="md:flex-1 justify-self-center sm:flex-1"><img src={about_image} /></div> */}
@@ -131,31 +133,20 @@ export default function Home() {
                 {/* <div class="md:flex-1 sm:flex-1"> */}
                 <div class="middle-text">
                     <p class="md:text-black text-5xl font-Inter font-semibold mb-8 sm:text-black">WHAT IS COMPCLUB</p>
-                    <p class="w-96 font-Inter font-normal text-xl mb-8"> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students.</p>
-                    <button
-                        class="middle-button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-36 h-14"
-                    >
-                        <p class="decoration-white"> Learn more → </p>
-                    </button>
+                    <p class="m-auto w-96 font-Inter font-normal text-xl mb-8"> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students.</p>
+                    <Link to='/aboutus' class='flex justify-center pb-7'>
+                        <button
+                            class="middle-button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-36 h-14">
+                            <p class="decoration-white"> Learn more → </p>
+                        </button>
+                    </Link>
                 </div>
             </div>
 
-            <div class="text-center py-5 pb-40">
-                <p class="text-5xl font-Inter font-semibold">UPCOMING EVENTS</p>
-                <div class="w-[67%] pt-[5%] pl-[15%] justify-items-center sm:w-[90%] pt-[5%] pl-[27%] justify-items-center"> <AliceCarousel
-                    mouseTracking
-                    disableButtonsControls
-                    items={items}
-                    responsive={responsive}
-                    controlsStrategy="alternate"
-                />
-                    <button
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold h-14 w-36 mt-4 rounded-full"
-                    >
-                        <p class="decoration-white"> Learn more → </p>
-                    </button>
-                </div>
-            </div>
-        </div >
+            
+        </div>
+
+           
+        
     )
 }

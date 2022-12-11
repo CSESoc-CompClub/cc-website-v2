@@ -12,7 +12,7 @@ import { green } from '@mui/material/colors';
 export default function ContactUs() {
   return (
     <div>
-      <img src={banner} alt='' class='object-contain h-1/4' />
+      <img src={banner} alt='' class='object-contain h-1/4 w-full' />
       <h3 class='mt-10 text-3xl font-sans font-bold text-center'>
         Let's get connected!
       </h3>
@@ -23,7 +23,7 @@ export default function ContactUs() {
           back to you faster then you can invert a binary tree!
         </p>
       </div>
-      <div class='mt-10 mx-12 grid grid-rows-3'>
+      <div class='mt-10 mx-12 grid grid-rows-3 py-[25px]'>
         <div class='grid grid-cols-2 place-items-center justify-center gap-4'>
           <Avatar sx={{ bgcolor: green[700] }}>
             <Link href='mailto:directors@compclub.org' color='inherit'>
