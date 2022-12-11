@@ -122,11 +122,12 @@ export default function Home() {
                 </div>
             </div>
 
+            {/* Contact us extras
             <div>
                 <div>Join our socials to stay invovled</div>
                 <div>Otherwise, sign up to our maillist to recieve updates when a new event is happening</div>
 
-            </div>
+            </div> */}
 
 
 
