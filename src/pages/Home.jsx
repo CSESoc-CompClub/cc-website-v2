@@ -94,12 +94,13 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div class="text-center pt- pb-40">
+            <div class="text-center pb-40">
                 <p class="text-5xl font-Inter font-semibold">PREVIOUS EVENTS</p>
                 <div className="flex-initial pt-[3%] justify-items-center">
                      <div className = "shadow-md">
                      <AliceCarousel
                     autoPlay
+                    paddingLeft={100}
                     autoPlayStrategy="none"
                     autoPlayInterval={1500}
                     animationDuration={2000}
