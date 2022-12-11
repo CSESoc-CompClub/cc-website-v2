@@ -23,7 +23,18 @@ $radius: 0.2rem;
   margin: 0;
   padding: 0;
 }
-
+.btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid $clr-primary;
+  background: transparent;
+  color: $clr-primary;
+  border-radius: $radius;
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
 
 .wrapper {
   display: grid;
@@ -34,8 +45,9 @@ $radius: 0.2rem;
 
 .card {
   overflow: hidden;
-  width:300px;
-  box-shadow: 0 2px 20px $clr-gray300;
+  padding: 20px;
+  height: 150%;
+
   border-radius: $radius;
   display: flex;
   flex-direction: column;
@@ -55,19 +67,6 @@ $radius: 0.2rem;
 
   &__description {
     padding: 0 1rem;
-  }
-
-  &__btn {
-    padding: 1rem;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 1rem;
-    border: 2px solid $clr-primary;
-    background: transparent;
-    color: $clr-primary;
-    border-radius: $radius;
-    transition: background 200ms ease-in, color 200ms ease-in;
   }
 
   &:hover {

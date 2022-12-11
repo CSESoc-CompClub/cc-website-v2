@@ -122,12 +122,13 @@
   align-items: center;
   letter-spacing: -0.5px;
 
-  color: #0f172a;
+  color: #0F172A;
 }
 
 .middle-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5%;
   margin: 5%;
 
@@ -139,9 +140,10 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1450px) {
   .middle-section {
     display: flex;
     justify-content: center;
@@ -163,5 +165,14 @@
     /* flex-direction: row; */
   }
 
-
+  .middle-image {
+    width: 50%;
+  }
 }
+/* .logo {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+} */
