@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import Header from "../components/Header"
 import banner from "../assets/home/compclub_banner.png"
+import { Link } from 'react-router-dom';
 import "./CSS/Home.scss"
 import about_image from "../assets/home/comp-club-about-us.jpg"
 import AliceCarousel from 'react-alice-carousel';
