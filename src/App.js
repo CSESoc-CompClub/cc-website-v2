@@ -7,19 +7,22 @@ import ContactUs from './pages/ContactUs';
 import Resources from './pages/Resources';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrolltoTop from './components/ScrolltoTop'
 
 function App() {
   return (
     <div className='body'>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/aboutus' element={<AboutUs />} />
-          <Route path='/events' element={<Events />} />
-          <Route path='/contactus' element={<ContactUs />} />
-          <Route path='/resources' element={<Resources />} />
-        </Routes>
+        <ScrolltoTop>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/aboutus' element={<AboutUs />} />
+            <Route path='/events' element={<Events />} />
+            <Route path='/contactus' element={<ContactUs />} />
+            <Route path='/resources' element={<Resources />} />
+          </Routes>
+        </ScrolltoTop>
       </BrowserRouter>
       <Footer />
     </div>
