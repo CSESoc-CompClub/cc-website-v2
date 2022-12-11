@@ -29,7 +29,7 @@ import "swiper/css/navigation";
 
 const responsive = {
     0: { items: 1},
-    500: { items: 2},
+    800: { items: 2},
     1024: { items: 3},
 };
 
@@ -50,22 +50,22 @@ function Card(props) {
 const items = [
     <Card
         img={carousel_one}
-        title="CompClub Summer School"
+        title="Summer School"
         description="Our annual Summer School teaching many coding languages and concepts in a week"
     />,
     <Card
         img={carousel_two}
-        title="3D Modelling Workshop"
+        title="3D Modelling"
         description="Our 3D Modelling Workshop working with A-Fram technologies"
     />,
     <Card
         img={carousel_three}
-        title="Intro to Python Workshop"
+        title="Intro to Python"
         description="Learning the basics of Python, including their data structures and building a game!"
     />,
     <Card
         img={carousel_four}
-        title="Micro Bits Workshop"
+        title="Micro Bits"
         description="Let's explore hardware! Learn how to use a Micro Bit to do fun activities."
     />,
     <Card
@@ -96,11 +96,10 @@ export default function Home() {
             </div>
             <div class="text-center pb-40">
                 <p class="text-5xl font-Inter font-semibold">PREVIOUS EVENTS</p>
-                <div className="flex-initial pt-[3%] justify-items-center">
+                <div className="flex-initial pt-[3%] justify-items-center w-[70%] m-auto">
                      <div className = "shadow-md">
                      <AliceCarousel
                     autoPlay
-                    paddingLeft={100}
                     autoPlayStrategy="none"
                     autoPlayInterval={1500}
                     animationDuration={2000}
