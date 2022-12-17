@@ -7,10 +7,6 @@ import './../styles/events.css'
 import banner from './../assets/about-us/about-us.jpg';
 import SummerWorkshopBanner from '../assets/about-us/summer-workshop.jpg';
 import WinterWorkshopBanner from '../assets/about-us/winter-workshop.png';
-import GroupIcon from '@mui/icons-material/Group';
-import FlagIcon from '@mui/icons-material/Flag';
-import SchoolIcon from '@mui/icons-material/School';
-import TopicIcon from '@mui/icons-material/HistoryEdu';
 
 
 import eventicon from '../assets/about-us/icons/events.svg'
@@ -23,7 +19,6 @@ import topicsicon from '../assets/about-us/icons/topics.svg'
 
 
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import {
@@ -215,7 +210,7 @@ export default function AboutUs() {
               </p>
               <br /><br />
               <div class='flex flex-wrap justify-start'>
-                <button class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded" onClick={() => navigate('/contactus')} style={{ marginLeft: 10, marginBottom: 5 }}>
+                <button class="p-[1rem] font-bold text-[1rem] border-[2px] border-solid border-[#3B81F6] rounded-[0.2rem] text-[#3B81F6] hover:bg-[#1c4ed8] hover:text-white" onClick={() => navigate('/contactus')} style={{ marginLeft: 10, marginBottom: 5 }}>
                   Contact us
                 </button>
               </div>

@@ -40,7 +40,7 @@ export default function ContactUs() {
         </div>
         <div class='grid grid-cols-2 place-items-center gap-4'>
           <p>
-            <a href='mailto:directors@compclub.org'>directors@compclub.org</a>
+            <a href='mailto:committee@compclub.org'>committee@compclub.org</a>
           </p>
           <div class='grid grid-cols-3 place-items-center gap-2'>
             <Link

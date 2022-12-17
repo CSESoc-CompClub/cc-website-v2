@@ -27,11 +27,11 @@ export default function Events() {
                 <div id="eventlist">
                     <UpcomingEvent 
                       name="Winter Workshop" 
-                      description="It's time for CSESoc CompClub Winter Workshops!! 🐧❄️ We're welcoming high school students 🤩 to join us over three days in the school holidays to learn how to code!!"
-                      date=" 6-8th of July 2022"
-                      time="10:00 - 4:00pm"
+                      description="We are welcoming high school students to join us over ☀️FIVE ☀️days in the school holidays to learn how to code and dip their toes into the world of 💻Computer Science!📟"
+                      date=" 16th-20th of Jan 2023"
+                      time="10am - 3pm each day"
                       location="UNSW"
-                      link="https://www.facebook.com/events/744066593508315/?ref=newsfeed"
+                      link="https://www.facebook.com/events/3418864701715340"
                     />
                     {/* If there a two/more events open at the same inclue this hr between two events
                       <hr class="h-0.5"/>
@@ -63,7 +63,7 @@ export default function Events() {
           If you would like to talk to us about running a workshop at your school or see when we are running our next event, head over to the Contact Us page!
       </div>
         <Link to='/contactus' class='flex justify-center pb-7 pt-[25px]'>
-          <button class="bg-gradient-to-r from-indigo-300 to-blue-800 text-white hover:bg-green-500 hover:underline text-md font-normal rounded-xl px-2 py-1">
+          <button class="p-[1rem] font-bold text-[1rem] m-[1rem] border-[2px] border-solid border-[#3B81F6] rounded-[0.2rem] text-[#3B81F6] hover:bg-[#1c4ed8] hover:text-white px-2 py-1">
             To Contact Us!
           </button>
         </Link>

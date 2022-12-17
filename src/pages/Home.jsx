@@ -13,8 +13,6 @@ import carousel_two from "../assets/home/carousel-pics/comp-club-3d-workshop.png
 import carousel_three from "../assets/home/carousel-pics/comp-club-intro-to-python.png";
 import carousel_four from "../assets/home/carousel-pics/comp-club-microbits-workshop.png";
 import carousel_five from "../assets/home/carousel-pics/intro_to_c_banner.png";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -80,24 +78,24 @@ export default function Home() {
         <div>
             <img src={banner} class='object-contain h-1/4 w-full'/>
             {/* <div class="md:flex sm:flex justify-center"> */}
-            <div class="middle-section pb-[100px]">
+            <div class="middle-section pb-[25px]">
                 {/* <div class="md:flex-1 justify-self-center sm:flex-1"><img src={about_image} /></div> */}
                 <div class="w-1/3 middle-image"><img class="rounded-lg object-center" src={about_image} /></div>
                 {/* <div class="md:flex-1 sm:flex-1"> */}
                 <div class="middle-text">
                     <p class="md:text-black text-5xl font-Inter font-semibold mb-8 sm:text-black">WHAT IS COMPCLUB</p>
                     <p class="m-auto w-96 font-Inter font-normal text-xl mb-8"> UNSW CompClub is a non-profit university society that aims to create a fun, collaborative environment for students to develop their interests and hone their programming skills along like-minded students.</p>
-                    <Link to='/aboutus' class='flex justify-center pb-7'>
+                    <Link to='/aboutus' class='flex justify-center'>
                         <button
-                            class="middle-button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-36 h-14">
+                            class="p-[1rem] font-bold text-[1rem] m-[1rem] border-[2px] border-solid border-[#3B81F6] rounded-[0.2rem] text-[#3B81F6] hover:bg-[#1c4ed8] hover:text-white">
                             <p class="decoration-white"> Learn more → </p>
                         </button>
                     </Link>
                 </div>
             </div>
-            <div class="text-center pb-40">
+            <div class="text-center pb-[100px]">
                 <p class="text-5xl font-Inter font-semibold">PREVIOUS EVENTS</p>
-                <div className="flex-initial pt-[3%] justify-items-center w-[70%] m-auto">
+                <div className="flex-initial pt-[50px] justify-items-center w-[70%] m-auto">
                      <div className = "shadow-md">
                         <AliceCarousel
                         autoPlay
@@ -114,21 +112,25 @@ export default function Home() {
                         controlsStrategy="alternate"
                         />
                     </div>
-                    <Link class = "pt-[1%]" to ="/events">
-                        <button className="btn">
+                    <Link class = "pt-[100px]" to ="/events">
+                        <button class="p-[1rem] font-bold text-[1rem] m-[1rem] border-[2px] border-solid border-[#3B81F6] rounded-[0.2rem] text-[#3B81F6] hover:bg-[#1c4ed8] hover:text-white">
                             Learn more →
                         </button>
                     </Link>
                 </div>
             </div>
-
-            {/* Contact us extras
-            <div>
-                <div>Join our socials to stay invovled</div>
-                <div>Otherwise, sign up to our maillist to recieve updates when a new event is happening</div>
-
-            </div> */}
-
+            
+            <div class="text-center">
+                <div class="flex justify-center text-5xl text-black font-bold">GET INVOLVED</div>
+                <div class="py-[20px]">
+                    <p class="w-[50%] text-center text-lg m-auto max-w-[1000px] font-Inter font-normal text-xl mb-8">If you are a uni student who would like to get invovled as a mentor, a teacher who would like to host a workshop at your school or a highschooler looking to be be part of a workshop, check out our Contact Us page for ways to get in touch!</p>
+                    <button class="p-[1rem] font-bold text-[1rem] m-[1rem] border-[2px] border-solid border-[#3B81F6] rounded-[0.2rem] text-[#3B81F6] hover:bg-[#1c4ed8] hover:text-white">
+                            Contact us →
+                    </button>
+                </div>
+            </div>
+    
+]
 
 
         </div>
