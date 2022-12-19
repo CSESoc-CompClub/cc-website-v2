@@ -4,6 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import AppsIcon from '@mui/icons-material/Apps';
 import fb from './../assets/contact-us/fb.svg';
 import insta from './../assets/contact-us/insta.svg';
+import insta2 from './../assets/contact-us/insta2.svg';
 import linkedin from './../assets/contact-us/linkedin.svg';
 import Avatar from '@mui/material/Avatar';
 import Link from '@mui/material/Link';
@@ -40,7 +41,7 @@ export default function ContactUs() {
         </div>
         <div class='grid grid-cols-2 place-items-center gap-4'>
           <p>
-            <a href='mailto:committee@compclub.org'>committee@compclub.org</a>
+            <a href='mailto:committee@compclub.org' class='sm:text-base text-xs'>committee@compclub.org</a>
           </p>
           <div class='grid grid-cols-3 place-items-center gap-2'>
             <Link
@@ -53,7 +54,7 @@ export default function ContactUs() {
               href='https://www.instagram.com/unswcompclub/?hl=en'
               color='inherit'
             >
-              <img src={insta} class='h-14 w-14' />
+              <img src={insta2} class='h-10 w-10' />
             </Link>
             <Link
               href='https://www.linkedin.com/company/csesoc-compclub/'
@@ -64,7 +65,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div class='m-12 grid place-items-center'>
+      <div class='sm:m-12 m-2 pb-[200px] sm:pb-[0px] grid place-items-center'>
         <img src={map} alt='' />
       </div>
     </div>

@@ -124,9 +124,11 @@ export default function Home() {
                 <div class="flex justify-center text-5xl text-black font-bold">GET INVOLVED</div>
                 <div class="py-[20px]">
                     <p class="w-[50%] text-center text-lg m-auto max-w-[1000px] font-Inter font-normal text-xl mb-8">If you are a uni student who would like to get invovled as a mentor, a teacher who would like to host a workshop at your school or a highschooler looking to be be part of a workshop, check out our Contact Us page for ways to get in touch!</p>
-                    <button class="p-[1rem] font-bold text-[1rem] m-[1rem] border-[2px] border-solid border-[#3B81F6] rounded-[0.2rem] text-[#3B81F6] hover:bg-[#1c4ed8] hover:text-white">
-                            Contact us →
-                    </button>
+                    <Link to ="/contactus">
+                        <button class="p-[1rem] font-bold text-[1rem] m-[1rem] border-[2px] border-solid border-[#3B81F6] rounded-[0.2rem] text-[#3B81F6] hover:bg-[#1c4ed8] hover:text-white">
+                                Contact us →
+                        </button>
+                    </Link>
                 </div>
             </div>
     
