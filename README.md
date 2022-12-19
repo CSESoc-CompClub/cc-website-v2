@@ -24,12 +24,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 ## Getting started with firebase
+We are currently using Firebase to deploy the website- https://firebase.google.com/docs/hosting/quickstart 
+
 Once you have downloaded the repo onto your own computer and want to have access to the firebase commands, type 'firebase login' and follow the steps to connect your local machine
 
 ## Deployment
-
-We are currently using Firebase to deploy the website- https://firebase.google.com/docs/hosting/quickstart 
-
 
 If you have made changes to the website and would like to redploy it, follow these steps.
 
