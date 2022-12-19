@@ -1,6 +1,6 @@
 # CompClubs new and improved website
 
-This project was built and deployed by the 2022 Dev Team
+This project was built and deployed by the 2022 Dev Team\
 Updated and maintained by future Dev Teams
 
 ## Available Scripts
