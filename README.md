@@ -23,7 +23,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-
+## Getting started with firebase
+Once you have downloaded the repo onto your own computer and want to have access to the firebase commands, type 'firebase login' and follow the steps to connect your local machine
 
 ## Deployment
 
