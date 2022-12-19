@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# CompClubs new and improved website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built and deployed by the 2022 Dev Team
+Updated and maintained by future Dev Teams
 
 ## Available Scripts
 
@@ -14,30 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -45,26 +22,46 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Deployment
 
-### Making a Progressive Web App
+We are currently using Firebase to deploy the website- https://firebase.google.com/docs/hosting/quickstart 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+If you have made changes to the website and would like to redploy it, follow these steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Step 1
+Once you have made changes to the website, run 'npm run build' to create a production build for the website
 
-### Deployment
+### Step 2
+Type 'firebase deploy' into the command line, which will then deploy the website to server 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Step 3
+Enjoy your newly deployed website!
 
-### `npm run build` fails to minify
+### How the deployment works
+'npm run build' takes all the files in your project and the files in the 'public' folder and creates a production folder called 'build' 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Firebase then takes that folder and publishes it too their servers, linking it to the url that we've bought.
+
+### Extras
+**Taking down the website**: Incase something has gone wrong with the website type 'firebase hosting:disable' and then hit 'y'
+
+Avoid using 'firebase init' unless something has completely broke as it has already been configured to work properly.
+
+
+## Credits
+### Created, designed and deployed by the Development Team 2022:
+Raghav Lall \
+Noah Gordon \
+Eeman Chaudhry \
+Joanna He \
+Rovielyn Espiritu \
+Sohum Jain \
+Winnie Zhang \
+Zac Saber
+
+
+
