@@ -79,19 +79,11 @@ li {
   align-items: center;
 }
 
-.center-vertical {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 
-.mini-flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
+
 
 @media screen and (max-width: 800px) {
     .flexible-row {
@@ -99,12 +91,6 @@ li {
     }
 }
 
-
-
-h2 {
-  font-weight: 700;
-  font-size: 24px;
-}
 
 
 .flexible-col {

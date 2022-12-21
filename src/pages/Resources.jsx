@@ -22,9 +22,9 @@ export default function Resources() {
       </div>
 
       {/* Articles Section */}
-      <div class="text-center py-5">
+      <div class="text-center pt-[100px] pb-[50px]">
         <h1 class="text-3xl gray-900 font-bold py-5">Articles</h1>
-        <div class="flex sm:flex-col sm:space-y-4 md:flex-row md:space-x-4 md:space-y-0 justify-center">
+        <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 justify-center">
           {Articles.map((articles) => {
             return (
               <ArticleCard

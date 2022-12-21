@@ -1,3 +1,5 @@
+import careerguide from './../assets/resources/WIT-careers-guide2.png'
+
 const Articles = [
   {
     id: 1,
@@ -16,9 +18,9 @@ const Articles = [
   {
     id: 3,
     link: 'https://unswwit.com/#/media/blog/37',
-    img: 'https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/8834676/8834676-1632441866014-69eeadfcd8fff.jpg',
+    img: careerguide,
     imgAlt: 'banner',
-    title: 'Introducing Tanzeem Syeda, Software Engineer at Wisetech Global',
+    title: 'Introducing UNSW WIT Careers Guide',
   },
 ];
 
