@@ -15,7 +15,7 @@ export default function Resources() {
         <p class="gray-500">Google Drive links for our ongoing and previous workshops!</p>
         <div class="flex justify-center mb-3 p-4">
           <div class="flex flex-col space-y-6">
-              <ResourceCard/>    
+              <div class='hidden'><ResourceCard/></div>    
               <PreviousWorkshopCar/>      
           </div>
         </div>
