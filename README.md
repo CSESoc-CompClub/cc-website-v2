@@ -1,7 +1,7 @@
 # CompClubs new and improved website
 
 This project was built and deployed by the 2022 Dev Team\
-Updated and maintained by future Dev Teams
+Updated and maintained by future Dev Teams\
 You can find the website here: https://compclub.org/
 
 ## Available Scripts
