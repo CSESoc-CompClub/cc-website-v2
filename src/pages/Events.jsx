@@ -41,7 +41,7 @@ export default function Events() {
                     {/* If there a two/more events open at the same inclue this hr between two events
                       <hr class="h-0.5"/>
                     */}
-                    <div id="event" class="flex justify-center bg-sky-100 p-4">
+                    <div id="no upcoming events" class="flex justify-center bg-sky-100 p-4">
                       <div> 
                           <div id="name" class="text-lg font-bold">
                             No new events coming up
