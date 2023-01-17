@@ -25,17 +25,32 @@ export default function Events() {
                   </div>
                 </div>
                 <div id="eventlist">
-                    <UpcomingEvent 
-                      name="Winter Workshop" 
-                      description="We are welcoming high school students to join us over ☀️FIVE ☀️days in the school holidays to learn how to code and dip their toes into the world of 💻Computer Science!📟"
-                      date=" 16th-20th of Jan 2023"
-                      time="10am - 3pm each day"
-                      location="UNSW"
-                      link="https://www.facebook.com/events/3418864701715340"
-                    />
+                    {/* 
+                      Event template to use for a new event
+                       <UpcomingEvent 
+                        name="Winter Workshop" 
+                        description="We are welcoming high school students to join us over ☀️FIVE ☀️days in the school holidays to learn how to code and dip their toes into the world of 💻Computer Science!📟"
+                        date=" 16th-20th of Jan 2023"
+                        time="10am - 3pm each day"
+                        location="UNSW"
+                        link="https://www.facebook.com/events/3418864701715340"
+                      />
+                    
+                    */}
+                   
                     {/* If there a two/more events open at the same inclue this hr between two events
                       <hr class="h-0.5"/>
                     */}
+                    <div id="event" class="flex justify-center bg-sky-100 p-4">
+                      <div> 
+                          <div id="name" class="text-lg font-bold">
+                            No new events coming up
+                          </div>
+                          <div id="shortdescrip">
+                            Remeber to check out our socials or come back later to see if any new events are coming up
+                          </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
